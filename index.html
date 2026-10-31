@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>重装机兵 · FC 原版还原 & 全地图集</title>
+<style>
+  :root{
+    --bg:#0e0f12; --panel:#171a1f; --line:#262b33;
+    --text:#e8eaed; --dim:#8b939e; --gold:#ffc94a; --red:#e2564a;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; min-height:100vh; background:
+      radial-gradient(1200px 600px at 50% -10%, #1b1f27 0%, var(--bg) 60%);
+    color:var(--text);
+    font:15px/1.65 "Microsoft YaHei","PingFang SC",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:960px; margin:0 auto; padding:56px 24px 64px}
+  header{text-align:center; margin-bottom:44px}
+  .kicker{
+    display:inline-block; letter-spacing:.24em; font-size:11px; color:var(--gold);
+    border:1px solid rgba(255,201,74,.35); border-radius:999px;
+    padding:5px 14px 4px; margin-bottom:20px; text-transform:uppercase;
+  }
+  h1{
+    margin:0; font-size:44px; line-height:1.2; letter-spacing:.06em;
+    text-shadow:0 0 26px rgba(255,201,74,.18);
+  }
+  h1 .dot{color:var(--red)}
+  .desc{color:var(--dim); margin:14px auto 0; max-width:620px; font-size:14px}
+  .cards{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+  @media(max-width:720px){ .cards{grid-template-columns:1fr} h1{font-size:32px} }
+  a.card{
+    display:block; text-decoration:none; color:inherit; position:relative;
+    background:linear-gradient(180deg,#1b1e25,#15181d);
+    border:1px solid var(--line); border-radius:14px; padding:26px 24px 22px;
+    transition:.22s ease; overflow:hidden;
+  }
+  a.card:hover{border-color:rgba(255,201,74,.55); transform:translateY(-3px);
+    box-shadow:0 14px 34px -12px rgba(0,0,0,.85)}
+  a.card::after{
+    content:""; position:absolute; inset:0 0 auto 0; height:2px;
+    background:linear-gradient(90deg,transparent,var(--gold),transparent);
+    opacity:0; transition:.22s;
+  }
+  a.card:hover::after{opacity:1}
+  .ico{font-size:26px; line-height:1; margin-bottom:12px; display:block}
+  .card h2{margin:0 0 8px; font-size:20px; letter-spacing:.02em}
+  .card p{margin:0; color:var(--dim); font-size:13.5px}
+  .tags{margin-top:16px; display:flex; flex-wrap:wrap; gap:7px}
+  .tags span{
+    font-size:11px; color:#b9c0c9; background:#20242b;
+    border:1px solid #2b313a; border-radius:5px; padding:3px 8px;
+  }
+  .go{margin-top:18px; font-size:13px; color:var(--gold)}
+  .go::after{content:" →"}
+  footer{
+    margin-top:48px; padding-top:22px; border-top:1px solid var(--line);
+    color:#6d7683; font-size:12px; line-height:1.9;
+  }
+  footer b{color:#98a0ab; font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="kicker">METAL MAX · FC 1991</span>
+    <h1>重装机兵<span class="dot">.</span></h1>
+    <p class="desc">用模拟器内核直接在浏览器里跑原版 ROM，不是重制的仿制品；外加从 ROM 数据里完整导出的全地图集。</p>
+  </header>
+
+  <div class="cards">
+    <a class="card" href="game/">
+      <span class="ico">🎮</span>
+      <h2>开始游戏</h2>
+      <p>1.2 MB 单文件，原版汉化 ROM 在浏览器内运行。读取存档、战斗、升级、全部保留。</p>
+      <div class="tags"><span>免安装</span><span>键盘/手柄</span><span>可存档</span></div>
+      <div class="go">进入游戏</div>
+    </a>
+
+    <a class="card" href="atlas/">
+      <span class="ico">🗺️</span>
+      <h2>全地图集</h2>
+      <p>4096×4096 世界地图，外加 239 张城镇、房屋、设施、洞窟地图，编号与名称齐全。</p>
+      <div class="tags"><span>240 张</span><span>编号命名</span><span>可离线</span></div>
+      <div class="go">浏览地图</div>
+    </a>
+  </div>
+
+  <footer>
+    <b>操作</b>：方向键移动 · Z 确认 · X 取消 · Enter 开始。首次进入需取名字，方向键选字、Z 输入。<br>
+    <b>说明</b>：画面与音乐来自原版 ROM 数据，与实机一致；地图集为静态地形导出，不含 NPC 与道具分布。<br>
+    <b>声明</b>：本站仅作个人学习与研究用途，游戏版权归原作者及发行方所有。
+  </footer>
+</div>
+</body>
+</html>
