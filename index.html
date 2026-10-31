@@ -30,8 +30,9 @@
   }
   h1 .dot{color:var(--red)}
   .desc{color:var(--dim); margin:14px auto 0; max-width:620px; font-size:14px}
-  .cards{display:grid; grid-template-columns:1fr 1fr; gap:18px}
-  @media(max-width:720px){ .cards{grid-template-columns:1fr} h1{font-size:32px} }
+  .cards{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+  @media(max-width:900px){ .cards{grid-template-columns:1fr 1fr} }
+  @media(max-width:640px){ .cards{grid-template-columns:1fr} h1{font-size:32px} }
   a.card{
     display:block; text-decoration:none; color:inherit; position:relative;
     background:linear-gradient(180deg,#1b1e25,#15181d);
@@ -86,6 +87,14 @@
       <p>4096×4096 世界地图，外加 239 张城镇、房屋、设施、洞窟地图，编号与名称齐全。</p>
       <div class="tags"><span>240 张</span><span>编号命名</span><span>可离线</span></div>
       <div class="go">浏览地图</div>
+    </a>
+
+    <a class="card" href="characters/">
+      <span class="ico">👾</span>
+      <h2>角色图鉴</h2>
+      <p>131 只怪物、112 种人物、10 项特效，每个都带编号与动态图，可逐帧查看。</p>
+      <div class="tags"><span>253 项</span><span>动态 GIF</span><span>逐帧 PNG</span></div>
+      <div class="go">查看图鉴</div>
     </a>
   </div>
 

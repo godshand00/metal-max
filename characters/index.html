@@ -1,0 +1,2615 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>重装机兵 · 角色图鉴（怪物 131 / 人物 112 / 特效 10）</title>
+<style>
+:root{--bg:#0e0f12;--panel:#171a1f;--line:#262b33;--text:#e8eaed;--dim:#8b939e;--gold:#ffc94a;--red:#e2564a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);
+ font:14px/1.6 "Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+header{padding:28px 24px 18px;border-bottom:1px solid var(--line);
+ background:linear-gradient(180deg,#191c22,#0e0f12);position:sticky;top:0;z-index:9}
+h1{margin:0;font-size:22px;letter-spacing:.04em}
+h1 small{color:var(--gold);font-size:12px;font-weight:400;margin-left:10px;letter-spacing:.18em}
+.sub{color:var(--dim);font-size:12.5px;margin-top:6px}
+.bar{display:flex;gap:10px;align-items:center;margin-top:14px;flex-wrap:wrap}
+input[type=search]{flex:1;min-width:200px;background:#0b0c0f;border:1px solid var(--line);
+ color:var(--text);border-radius:7px;padding:8px 12px;font-size:13px;outline:none}
+input[type=search]:focus{border-color:rgba(255,201,74,.55)}
+.nav a{color:var(--dim);text-decoration:none;font-size:12.5px;border:1px solid var(--line);
+ border-radius:999px;padding:5px 12px;margin-right:6px}
+.nav a:hover{color:var(--gold);border-color:rgba(255,201,74,.5)}
+main{padding:22px 24px 60px;max-width:1600px;margin:0 auto}
+h2{margin:34px 0 14px;font-size:16px;color:var(--gold);border-left:3px solid var(--gold);
+ padding-left:9px;scroll-margin-top:130px}
+h2 .n{color:#7f8891;font-weight:400;font-size:12px;margin-left:8px}
+h2 .zip{float:right;font-size:11.5px;color:#9aa3ad;text-decoration:none;border:1px solid var(--line);
+ border-radius:999px;padding:3px 10px;font-weight:400}
+h2 .zip:hover{color:var(--gold);border-color:rgba(255,201,74,.5)}
+.grid{display:flex;flex-wrap:wrap;gap:12px}
+.card{margin:0;width:196px;background:var(--panel);border:1px solid var(--line);
+ border-radius:9px;padding:8px;transition:.18s}
+.card:hover{border-color:rgba(255,201,74,.45);transform:translateY(-2px)}
+.thumb{display:flex;align-items:center;justify-content:center;height:132px;
+ background:#0a0b0d;border-radius:6px;overflow:hidden;
+ background-image:linear-gradient(45deg,#101216 25%,transparent 25%,transparent 75%,#101216 75%),
+ linear-gradient(45deg,#101216 25%,transparent 25%,transparent 75%,#101216 75%);
+ background-size:12px 12px;background-position:0 0,6px 6px}
+.thumb.tall{height:150px}
+.thumb img{max-width:100%;max-height:100%;image-rendering:pixelated}
+figcaption{padding:7px 2px 0}
+.t{font-size:13px;line-height:1.35}
+.t b{color:var(--gold);font-weight:600;margin-right:3px}
+.ja{color:#9aa3ad;font-size:11px;margin-top:1px}
+.meta{color:#7a828c;font-size:11px;margin-top:4px;line-height:1.45;word-break:break-all}
+.meta.dim{color:#5f6771}
+.wanted{display:inline-block;margin-left:5px;background:rgba(226,86,74,.16);
+ color:#e2564a;border:1px solid rgba(226,86,74,.4);border-radius:4px;
+ font-size:10px;padding:0 4px;vertical-align:1px}
+.hide{display:none}
+footer{color:#5f6771;font-size:11.5px;padding:0 24px 40px;max-width:1600px;margin:0 auto}
+</style></head>
+<body>
+<header>
+  <h1>重装机兵 · 角色图鉴 <small>METAL MAX · SPRITE ARCHIVE</small></h1>
+  <div class="sub">
+    怪物 131 只（ROM 怪物模型表渲染）· 人物 112 种（176 张地图的 NPC 图集去重）· 特效 10 项（实机切帧与实测位移）
+  </div>
+  <div class="bar">
+    <input id="q" type="search" placeholder="搜索名称 / 编号 / 日文名 / 出场地图…">
+    <div class="nav">
+      <a href="#mon">怪物</a><a href="#cha">人物</a><a href="#fx">特效</a>
+    </div>
+  </div>
+</header>
+<main>
+  <h2 id="mon">怪物 <span class="n">131 只 · GIF 循环 = 待机 → 受击闪白 → 攻击前冲</span><a class="zip" href="帧图_怪物.zip">下载逐帧 PNG（ZIP）</a></h2>
+  <div class="grid"><figure class="card" data-k="电脑墙 000 サイバーウォール">
+  <a class="thumb" href="怪物/000_电脑墙.gif" target="_blank">
+    <img loading="lazy" src="怪物/000_电脑墙.gif" alt="电脑墙">
+  </a>
+  <figcaption>
+    <div class="t"><b>000</b> 电脑墙</div>
+    <div class="ja">サイバーウォール</div>
+    <div class="meta">HP 255 · 攻 800 · 防 1000<br>经验 0 · 金钱 0 · TANK</div>
+    <div class="meta dim">96×128px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="水怪 001 サルもネラいっか">
+  <a class="thumb" href="怪物/001_水怪.gif" target="_blank">
+    <img loading="lazy" src="怪物/001_水怪.gif" alt="水怪">
+  </a>
+  <figcaption>
+    <div class="t"><b>001</b> 水怪<span class="wanted">通缉</span></div>
+    <div class="ja">サルもネラいっか</div>
+    <div class="meta">HP 60 · 攻 54 · 防 30<br>经验 45 · 金钱 110 · BIONIC</div>
+    <div class="meta dim">48×64px · 6 帧 · 4 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="水鬼 002 ドス・ピラニアス">
+  <a class="thumb" href="怪物/002_水鬼.gif" target="_blank">
+    <img loading="lazy" src="怪物/002_水鬼.gif" alt="水鬼">
+  </a>
+  <figcaption>
+    <div class="t"><b>002</b> 水鬼<span class="wanted">通缉</span></div>
+    <div class="ja">ドス・ピラニアス</div>
+    <div class="meta">HP 110 · 攻 90 · 防 50<br>经验 80 · 金钱 189 · BIONIC</div>
+    <div class="meta dim">32×64px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="马歇尔 003 マッドマッスル">
+  <a class="thumb" href="怪物/003_马歇尔.gif" target="_blank">
+    <img loading="lazy" src="怪物/003_马歇尔.gif" alt="马歇尔">
+  </a>
+  <figcaption>
+    <div class="t"><b>003</b> 马歇尔<span class="wanted">通缉</span></div>
+    <div class="ja">マッドマッスル</div>
+    <div class="meta">HP 288 · 攻 230 · 防 250<br>经验 12 · 金钱 17 · CYBERNETIC</div>
+    <div class="meta dim">48×64px · 6 帧 · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="大象 004 マンもスタンク">
+  <a class="thumb" href="怪物/004_大象.gif" target="_blank">
+    <img loading="lazy" src="怪物/004_大象.gif" alt="大象">
+  </a>
+  <figcaption>
+    <div class="t"><b>004</b> 大象<span class="wanted">通缉</span></div>
+    <div class="ja">マンもスタンク</div>
+    <div class="meta">HP 1000 · 攻 300 · 防 210<br>经验 30 · 金钱 1 · CYBERNETIC</div>
+    <div class="meta dim">96×80px · 6 帧 · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="神密人 005 ミスターカミカゼ">
+  <a class="thumb" href="怪物/005_神密人.gif" target="_blank">
+    <img loading="lazy" src="怪物/005_神密人.gif" alt="神密人">
+  </a>
+  <figcaption>
+    <div class="t"><b>005</b> 神密人<span class="wanted">通缉</span></div>
+    <div class="ja">ミスターカミカゼ</div>
+    <div class="meta">HP 600 · 攻 1000 · 防 100<br>经验 100 · 金钱 5 · CYBERNETIC</div>
+    <div class="meta dim">48×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="蜈蚣 006 ムカデロン">
+  <a class="thumb" href="怪物/006_蜈蚣.gif" target="_blank">
+    <img loading="lazy" src="怪物/006_蜈蚣.gif" alt="蜈蚣">
+  </a>
+  <figcaption>
+    <div class="t"><b>006</b> 蜈蚣<span class="wanted">通缉</span></div>
+    <div class="ja">ムカデロン</div>
+    <div class="meta">HP 780 · 攻 484 · 防 368<br>经验 39 · 金钱 1 · CYBERNETIC</div>
+    <div class="meta dim">96×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="戈麦斯 007 ゴメス">
+  <a class="thumb" href="怪物/007_戈麦斯.gif" target="_blank">
+    <img loading="lazy" src="怪物/007_戈麦斯.gif" alt="戈麦斯">
+  </a>
+  <figcaption>
+    <div class="t"><b>007</b> 戈麦斯<span class="wanted">通缉</span></div>
+    <div class="ja">ゴメス</div>
+    <div class="meta">HP 250 · 攻 600 · 防 170<br>经验 45 · 金钱 25 · BIONIC</div>
+    <div class="meta dim">48×64px · 6 帧 · 4 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="弗朗 008 ダストフランケン">
+  <a class="thumb" href="怪物/008_弗朗.gif" target="_blank">
+    <img loading="lazy" src="怪物/008_弗朗.gif" alt="弗朗">
+  </a>
+  <figcaption>
+    <div class="t"><b>008</b> 弗朗<span class="wanted">通缉</span></div>
+    <div class="ja">ダストフランケン</div>
+    <div class="meta">HP 110 · 攻 620 · 防 300<br>经验 48 · 金钱 50 · TANK</div>
+    <div class="meta dim">48×64px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="波特 009 サルもネラほんぽ">
+  <a class="thumb" href="怪物/009_波特.gif" target="_blank">
+    <img loading="lazy" src="怪物/009_波特.gif" alt="波特">
+  </a>
+  <figcaption>
+    <div class="t"><b>009</b> 波特<span class="wanted">通缉</span></div>
+    <div class="ja">サルもネラほんぽ</div>
+    <div class="meta">HP 8 · 攻 45 · 防 1020<br>经验 250 · 金钱 3 · BIONIC</div>
+    <div class="meta dim">48×64px · 6 帧 · 4 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="沙漠之舟 010 ロンメルゴースト">
+  <a class="thumb" href="怪物/010_沙漠之舟.gif" target="_blank">
+    <img loading="lazy" src="怪物/010_沙漠之舟.gif" alt="沙漠之舟">
+  </a>
+  <figcaption>
+    <div class="t"><b>010</b> 沙漠之舟<span class="wanted">通缉</span></div>
+    <div class="ja">ロンメルゴースト</div>
+    <div class="meta">HP 255 · 攻 888 · 防 600<br>经验 110 · 金钱 50 · TANK</div>
+    <div class="meta dim">96×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="帕鲁 011 バッド・{OPF3:B5}">
+  <a class="thumb" href="怪物/011_帕鲁.gif" target="_blank">
+    <img loading="lazy" src="怪物/011_帕鲁.gif" alt="帕鲁">
+  </a>
+  <figcaption>
+    <div class="t"><b>011</b> 帕鲁<span class="wanted">通缉</span></div>
+    <div class="ja">バッド・{OPF3:B5}</div>
+    <div class="meta">HP 1000 · 攻 400 · 防 468<br>经验 80 · 金钱 1 · CYBERNETIC</div>
+    <div class="meta dim">48×64px · 6 帧 · 4 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="戈斯战车 012 ゴメスの{OPF3:10}">
+  <a class="thumb" href="怪物/012_戈斯战车.gif" target="_blank">
+    <img loading="lazy" src="怪物/012_戈斯战车.gif" alt="戈斯战车">
+  </a>
+  <figcaption>
+    <div class="t"><b>012</b> 戈斯战车</div>
+    <div class="ja">ゴメスの{OPF3:10}</div>
+    <div class="meta">HP 175 · 攻 680 · 防 420<br>经验 45 · 金钱 1 · TANK</div>
+    <div class="meta dim">64×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="反坦克炮 013 バズーカドッグ">
+  <a class="thumb" href="怪物/013_反坦克炮.gif" target="_blank">
+    <img loading="lazy" src="怪物/013_反坦克炮.gif" alt="反坦克炮">
+  </a>
+  <figcaption>
+    <div class="t"><b>013</b> 反坦克炮</div>
+    <div class="ja">バズーカドッグ</div>
+    <div class="meta">HP 150 · 攻 280 · 防 175<br>经验 50 · 金钱 79 · BIONIC</div>
+    <div class="meta dim">48×48px · 6 帧 · 6 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="异形 014 タンスゴン">
+  <a class="thumb" href="怪物/014_异形.gif" target="_blank">
+    <img loading="lazy" src="怪物/014_异形.gif" alt="异形">
+  </a>
+  <figcaption>
+    <div class="t"><b>014</b> 异形</div>
+    <div class="ja">タンスゴン</div>
+    <div class="meta">HP 240 · 攻 114 · 防 150<br>经验 5 · 金钱 10 · BIONIC</div>
+    <div class="meta dim">64×48px · 6 帧 · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="拦截车 015 マッスルカー">
+  <a class="thumb" href="怪物/015_拦截车.gif" target="_blank">
+    <img loading="lazy" src="怪物/015_拦截车.gif" alt="拦截车">
+  </a>
+  <figcaption>
+    <div class="t"><b>015</b> 拦截车</div>
+    <div class="ja">マッスルカー</div>
+    <div class="meta">HP 80 · 攻 1 · 防 70<br>经验 21 · 金钱 100 · TANK</div>
+    <div class="meta dim">32×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="战狗 016 バイオニックポチ">
+  <a class="thumb" href="怪物/016_战狗.gif" target="_blank">
+    <img loading="lazy" src="怪物/016_战狗.gif" alt="战狗">
+  </a>
+  <figcaption>
+    <div class="t"><b>016</b> 战狗</div>
+    <div class="ja">バイオニックポチ</div>
+    <div class="meta">HP 100 · 攻 50 · 防 50<br>经验 20 · 金钱 32 · BIONIC</div>
+    <div class="meta dim">48×48px · 6 帧 · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="流氓 017 ふりょうグループ">
+  <a class="thumb" href="怪物/017_流氓.gif" target="_blank">
+    <img loading="lazy" src="怪物/017_流氓.gif" alt="流氓">
+  </a>
+  <figcaption>
+    <div class="t"><b>017</b> 流氓</div>
+    <div class="ja">ふりょうグループ</div>
+    <div class="meta">HP 100 · 攻 32 · 防 93<br>经验 1 · 金钱 1 · BIONIC</div>
+    <div class="meta dim">32×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="瓦鲁部下 018 ワルゲりヨこぶん">
+  <a class="thumb" href="怪物/018_瓦鲁部下.gif" target="_blank">
+    <img loading="lazy" src="怪物/018_瓦鲁部下.gif" alt="瓦鲁部下">
+  </a>
+  <figcaption>
+    <div class="t"><b>018</b> 瓦鲁部下</div>
+    <div class="ja">ワルゲりヨこぶん</div>
+    <div class="meta">HP 150 · 攻 150 · 防 110<br>经验 210 · 金钱 64 · BIONIC</div>
+    <div class="meta dim">32×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="瓦鲁 019 ワルゲりヨ">
+  <a class="thumb" href="怪物/019_瓦鲁.gif" target="_blank">
+    <img loading="lazy" src="怪物/019_瓦鲁.gif" alt="瓦鲁">
+  </a>
+  <figcaption>
+    <div class="t"><b>019</b> 瓦鲁</div>
+    <div class="ja">ワルゲりヨ</div>
+    <div class="meta">HP 190 · 攻 200 · 防 100<br>经验 20 · 金钱 15 · TANK</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="异形鱼 020 ミュータントワニ">
+  <a class="thumb" href="怪物/020_异形鱼.gif" target="_blank">
+    <img loading="lazy" src="怪物/020_异形鱼.gif" alt="异形鱼">
+  </a>
+  <figcaption>
+    <div class="t"><b>020</b> 异形鱼</div>
+    <div class="ja">ミュータントワニ</div>
+    <div class="meta">HP 400 · 攻 372 · 防 280<br>经验 40 · 金钱 200 · CYBERNETIC</div>
+    <div class="meta dim">64×64px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="防御机器 021 ロボポりス">
+  <a class="thumb" href="怪物/021_防御机器.gif" target="_blank">
+    <img loading="lazy" src="怪物/021_防御机器.gif" alt="防御机器">
+  </a>
+  <figcaption>
+    <div class="t"><b>021</b> 防御机器</div>
+    <div class="ja">ロボポりス</div>
+    <div class="meta">HP 200 · 攻 500 · 防 448<br>经验 12 · 金钱 19 · TANK</div>
+    <div class="meta dim">80×128px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="激光系统 022 ガーディアン">
+  <a class="thumb" href="怪物/022_激光系统.gif" target="_blank">
+    <img loading="lazy" src="怪物/022_激光系统.gif" alt="激光系统">
+  </a>
+  <figcaption>
+    <div class="t"><b>022</b> 激光系统</div>
+    <div class="ja">ガーディアン</div>
+    <div class="meta">HP 150 · 攻 700 · 防 500<br>经验 80 · 金钱 7 · TANK</div>
+    <div class="meta dim">48×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="巨型炮 023 ビックキャノン">
+  <a class="thumb" href="怪物/023_巨型炮.gif" target="_blank">
+    <img loading="lazy" src="怪物/023_巨型炮.gif" alt="巨型炮">
+  </a>
+  <figcaption>
+    <div class="t"><b>023</b> 巨型炮</div>
+    <div class="ja">ビックキャノン</div>
+    <div class="meta">HP 210 · 攻 200 · 防 93<br>经验 10 · 金钱 1 · TANK</div>
+    <div class="meta dim">96×64px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="巨蚁 024 きょだいアり">
+  <a class="thumb" href="怪物/024_巨蚁.gif" target="_blank">
+    <img loading="lazy" src="怪物/024_巨蚁.gif" alt="巨蚁">
+  </a>
+  <figcaption>
+    <div class="t"><b>024</b> 巨蚁</div>
+    <div class="ja">きょだいアり</div>
+    <div class="meta">HP 5 · 攻 15 · 防 15<br>经验 1 · 金钱 2 · BIONIC</div>
+    <div class="meta dim">32×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="杀人虫 025 さつじんアメーバ">
+  <a class="thumb" href="怪物/025_杀人虫.gif" target="_blank">
+    <img loading="lazy" src="怪物/025_杀人虫.gif" alt="杀人虫">
+  </a>
+  <figcaption>
+    <div class="t"><b>025</b> 杀人虫</div>
+    <div class="ja">さつじんアメーバ</div>
+    <div class="meta">HP 12 · 攻 18 · 防 15<br>经验 2 · 金钱 3 · BIONIC</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="火焰枪 026 うろつきポりタン">
+  <a class="thumb" href="怪物/026_火焰枪.gif" target="_blank">
+    <img loading="lazy" src="怪物/026_火焰枪.gif" alt="火焰枪">
+  </a>
+  <figcaption>
+    <div class="t"><b>026</b> 火焰枪</div>
+    <div class="ja">うろつきポりタン</div>
+    <div class="meta">HP 8 · 攻 20 · 防 20<br>经验 2 · 金钱 4 · CYBERNETIC</div>
+    <div class="meta dim">32×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="生物炮 027 イもバルカン">
+  <a class="thumb" href="怪物/027_生物炮.gif" target="_blank">
+    <img loading="lazy" src="怪物/027_生物炮.gif" alt="生物炮">
+  </a>
+  <figcaption>
+    <div class="t"><b>027</b> 生物炮</div>
+    <div class="ja">イもバルカン</div>
+    <div class="meta">HP 15 · 攻 24 · 防 24<br>经验 3 · 金钱 6 · BIONIC</div>
+    <div class="meta dim">64×32px · 6 帧 · 6 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="加农炮 028 キャノンホッパー">
+  <a class="thumb" href="怪物/028_加农炮.gif" target="_blank">
+    <img loading="lazy" src="怪物/028_加农炮.gif" alt="加农炮">
+  </a>
+  <figcaption>
+    <div class="t"><b>028</b> 加农炮</div>
+    <div class="ja">キャノンホッパー</div>
+    <div class="meta">HP 28 · 攻 35 · 防 30<br>经验 5 · 金钱 8 · CYBERNETIC</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="彷生蜗牛 029 バイオまいまい">
+  <a class="thumb" href="怪物/029_彷生蜗牛.gif" target="_blank">
+    <img loading="lazy" src="怪物/029_彷生蜗牛.gif" alt="彷生蜗牛">
+  </a>
+  <figcaption>
+    <div class="t"><b>029</b> 彷生蜗牛</div>
+    <div class="ja">バイオまいまい</div>
+    <div class="meta">HP 7 · 攻 17 · 防 40<br>经验 4 · 金钱 10 · BIONIC</div>
+    <div class="meta dim">32×32px · 6 帧 · 6 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="炸弹龟 030 ボムガメ">
+  <a class="thumb" href="怪物/030_炸弹龟.gif" target="_blank">
+    <img loading="lazy" src="怪物/030_炸弹龟.gif" alt="炸弹龟">
+  </a>
+  <figcaption>
+    <div class="t"><b>030</b> 炸弹龟</div>
+    <div class="ja">ボムガメ</div>
+    <div class="meta">HP 36 · 攻 21 · 防 72<br>经验 8 · 金钱 15 · CYBERNETIC</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="喷火怪 031 ひあそびザル">
+  <a class="thumb" href="怪物/031_喷火怪.gif" target="_blank">
+    <img loading="lazy" src="怪物/031_喷火怪.gif" alt="喷火怪">
+  </a>
+  <figcaption>
+    <div class="t"><b>031</b> 喷火怪</div>
+    <div class="ja">ひあそびザル</div>
+    <div class="meta">HP 35 · 攻 30 · 防 15<br>经验 5 · 金钱 10 · BIONIC</div>
+    <div class="meta dim">48×64px · 6 帧 · 4 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="机械虫 032 ドりルワーム">
+  <a class="thumb" href="怪物/032_机械虫.gif" target="_blank">
+    <img loading="lazy" src="怪物/032_机械虫.gif" alt="机械虫">
+  </a>
+  <figcaption>
+    <div class="t"><b>032</b> 机械虫</div>
+    <div class="ja">ドりルワーム</div>
+    <div class="meta">HP 16 · 攻 19 · 防 27<br>经验 10 · 金钱 7 · CYBERNETIC</div>
+    <div class="meta dim">32×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="食人花 033 スもッグフラワー">
+  <a class="thumb" href="怪物/033_食人花.gif" target="_blank">
+    <img loading="lazy" src="怪物/033_食人花.gif" alt="食人花">
+  </a>
+  <figcaption>
+    <div class="t"><b>033</b> 食人花</div>
+    <div class="ja">スもッグフラワー</div>
+    <div class="meta">HP 48 · 攻 31 · 防 22<br>经验 7 · 金钱 15 · BIONIC</div>
+    <div class="meta dim">48×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="步枪鸟 034 てっぽうどり">
+  <a class="thumb" href="怪物/034_步枪鸟.gif" target="_blank">
+    <img loading="lazy" src="怪物/034_步枪鸟.gif" alt="步枪鸟">
+  </a>
+  <figcaption>
+    <div class="t"><b>034</b> 步枪鸟</div>
+    <div class="ja">てっぽうどり</div>
+    <div class="meta">HP 35 · 攻 38 · 防 30<br>经验 15 · 金钱 18 · BIONIC</div>
+    <div class="meta dim">48×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="古炮 035 いっぱつ{OP33}">
+  <a class="thumb" href="怪物/035_古炮.gif" target="_blank">
+    <img loading="lazy" src="怪物/035_古炮.gif" alt="古炮">
+  </a>
+  <figcaption>
+    <div class="t"><b>035</b> 古炮</div>
+    <div class="ja">いっぱつ{OP33}</div>
+    <div class="meta">HP 30 · 攻 100 · 防 60<br>经验 14 · 金钱 50 · TANK</div>
+    <div class="meta dim">64×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="毒蜗牛 036 メテオまいまい">
+  <a class="thumb" href="怪物/036_毒蜗牛.gif" target="_blank">
+    <img loading="lazy" src="怪物/036_毒蜗牛.gif" alt="毒蜗牛">
+  </a>
+  <figcaption>
+    <div class="t"><b>036</b> 毒蜗牛</div>
+    <div class="ja">メテオまいまい</div>
+    <div class="meta">HP 17 · 攻 42 · 防 48<br>经验 29 · 金钱 15 · BIONIC</div>
+    <div class="meta dim">32×32px · 6 帧 · 6 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="机器鸟 037 ピッケルバード">
+  <a class="thumb" href="怪物/037_机器鸟.gif" target="_blank">
+    <img loading="lazy" src="怪物/037_机器鸟.gif" alt="机器鸟">
+  </a>
+  <figcaption>
+    <div class="t"><b>037</b> 机器鸟</div>
+    <div class="ja">ピッケルバード</div>
+    <div class="meta">HP 40 · 攻 70 · 防 45<br>经验 18 · 金钱 20 · CYBERNETIC</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="酸蚁 038 アシッドアント">
+  <a class="thumb" href="怪物/038_酸蚁.gif" target="_blank">
+    <img loading="lazy" src="怪物/038_酸蚁.gif" alt="酸蚁">
+  </a>
+  <figcaption>
+    <div class="t"><b>038</b> 酸蚁</div>
+    <div class="ja">アシッドアント</div>
+    <div class="meta">HP 45 · 攻 15 · 防 15<br>经验 34 · 金钱 24 · BIONIC</div>
+    <div class="meta dim">32×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="坦克 039 {OPF3:19}ごろし">
+  <a class="thumb" href="怪物/039_坦克.gif" target="_blank">
+    <img loading="lazy" src="怪物/039_坦克.gif" alt="坦克">
+  </a>
+  <figcaption>
+    <div class="t"><b>039</b> 坦克</div>
+    <div class="ja">{OPF3:19}ごろし</div>
+    <div class="meta">HP 25 · 攻 72 · 防 40<br>经验 28 · 金钱 45 · TANK</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="侦察蜂 040 パトロールバチ">
+  <a class="thumb" href="怪物/040_侦察蜂.gif" target="_blank">
+    <img loading="lazy" src="怪物/040_侦察蜂.gif" alt="侦察蜂">
+  </a>
+  <figcaption>
+    <div class="t"><b>040</b> 侦察蜂</div>
+    <div class="ja">パトロールバチ</div>
+    <div class="meta">HP 34 · 攻 39 · 防 17<br>经验 24 · 金钱 14 · BIONIC</div>
+    <div class="meta dim">32×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="机械河马 041 カバガン">
+  <a class="thumb" href="怪物/041_机械河马.gif" target="_blank">
+    <img loading="lazy" src="怪物/041_机械河马.gif" alt="机械河马">
+  </a>
+  <figcaption>
+    <div class="t"><b>041</b> 机械河马</div>
+    <div class="ja">カバガン</div>
+    <div class="meta">HP 112 · 攻 80 · 防 64<br>经验 45 · 金钱 38 · CYBERNETIC</div>
+    <div class="meta dim">48×64px · 6 帧 · 6 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="暗堡 042 けいびシェルター">
+  <a class="thumb" href="怪物/042_暗堡.gif" target="_blank">
+    <img loading="lazy" src="怪物/042_暗堡.gif" alt="暗堡">
+  </a>
+  <figcaption>
+    <div class="t"><b>042</b> 暗堡</div>
+    <div class="ja">けいびシェルター</div>
+    <div class="meta">HP 15 · 攻 55 · 防 30<br>经验 17 · 金钱 20 · TANK</div>
+    <div class="meta dim">32×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="章鱼坦克 043 タコタンク">
+  <a class="thumb" href="怪物/043_章鱼坦克.gif" target="_blank">
+    <img loading="lazy" src="怪物/043_章鱼坦克.gif" alt="章鱼坦克">
+  </a>
+  <figcaption>
+    <div class="t"><b>043</b> 章鱼坦克</div>
+    <div class="ja">タコタンク</div>
+    <div class="meta">HP 83 · 攻 74 · 防 27<br>经验 21 · 金钱 47 · BIONIC</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="金蚁 044 ゴールドアント">
+  <a class="thumb" href="怪物/044_金蚁.gif" target="_blank">
+    <img loading="lazy" src="怪物/044_金蚁.gif" alt="金蚁">
+  </a>
+  <figcaption>
+    <div class="t"><b>044</b> 金蚁</div>
+    <div class="ja">ゴールドアント</div>
+    <div class="meta">HP 8 · 攻 15 · 防 100<br>经验 5 · 金钱 210 · BIONIC</div>
+    <div class="meta dim">32×16px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="反坦克炮(2) 045 スナイパードッグ">
+  <a class="thumb" href="怪物/045_反坦克炮(2).gif" target="_blank">
+    <img loading="lazy" src="怪物/045_反坦克炮(2).gif" alt="反坦克炮(2)">
+  </a>
+  <figcaption>
+    <div class="t"><b>045</b> 反坦克炮(2)</div>
+    <div class="ja">スナイパードッグ</div>
+    <div class="meta">HP 53 · 攻 100 · 防 60<br>经验 32 · 金钱 53 · BIONIC</div>
+    <div class="meta dim">48×48px · 6 帧 · 6 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="火焰炮 046 カラッポりタン">
+  <a class="thumb" href="怪物/046_火焰炮.gif" target="_blank">
+    <img loading="lazy" src="怪物/046_火焰炮.gif" alt="火焰炮">
+  </a>
+  <figcaption>
+    <div class="t"><b>046</b> 火焰炮</div>
+    <div class="ja">カラッポりタン</div>
+    <div class="meta">HP 8 · 攻 40 · 防 20<br>经验 8 · 金钱 21 · CYBERNETIC</div>
+    <div class="meta dim">32×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="蛙人 047 フロッグマン">
+  <a class="thumb" href="怪物/047_蛙人.gif" target="_blank">
+    <img loading="lazy" src="怪物/047_蛙人.gif" alt="蛙人">
+  </a>
+  <figcaption>
+    <div class="t"><b>047</b> 蛙人</div>
+    <div class="ja">フロッグマン</div>
+    <div class="meta">HP 40 · 攻 45 · 防 44<br>经验 40 · 金钱 28 · BIONIC</div>
+    <div class="meta dim">32×64px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="85自行炮 048 85{9B}じそうほう">
+  <a class="thumb" href="怪物/048_85自行炮.gif" target="_blank">
+    <img loading="lazy" src="怪物/048_85自行炮.gif" alt="85自行炮">
+  </a>
+  <figcaption>
+    <div class="t"><b>048</b> 85自行炮</div>
+    <div class="ja">85{9B}じそうほう</div>
+    <div class="meta">HP 24 · 攻 100 · 防 65<br>经验 48 · 金钱 60 · TANK</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="野战炮 049 バーナーホッパー">
+  <a class="thumb" href="怪物/049_野战炮.gif" target="_blank">
+    <img loading="lazy" src="怪物/049_野战炮.gif" alt="野战炮">
+  </a>
+  <figcaption>
+    <div class="t"><b>049</b> 野战炮</div>
+    <div class="ja">バーナーホッパー</div>
+    <div class="meta">HP 28 · 攻 40 · 防 30<br>经验 32 · 金钱 58 · CYBERNETIC</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="毒液枪 050 スポイトキウイ">
+  <a class="thumb" href="怪物/050_毒液枪.gif" target="_blank">
+    <img loading="lazy" src="怪物/050_毒液枪.gif" alt="毒液枪">
+  </a>
+  <figcaption>
+    <div class="t"><b>050</b> 毒液枪</div>
+    <div class="ja">スポイトキウイ</div>
+    <div class="meta">HP 32 · 攻 24 · 防 27<br>经验 15 · 金钱 35 · CYBERNETIC</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="化学炮 051 どくイもキャノン">
+  <a class="thumb" href="怪物/051_化学炮.gif" target="_blank">
+    <img loading="lazy" src="怪物/051_化学炮.gif" alt="化学炮">
+  </a>
+  <figcaption>
+    <div class="t"><b>051</b> 化学炮</div>
+    <div class="ja">どくイもキャノン</div>
+    <div class="meta">HP 50 · 攻 88 · 防 24<br>经验 30 · 金钱 40 · BIONIC</div>
+    <div class="meta dim">64×32px · 6 帧 · 6 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="狙击鸟 052 ちゅうしゃどり">
+  <a class="thumb" href="怪物/052_狙击鸟.gif" target="_blank">
+    <img loading="lazy" src="怪物/052_狙击鸟.gif" alt="狙击鸟">
+  </a>
+  <figcaption>
+    <div class="t"><b>052</b> 狙击鸟</div>
+    <div class="ja">ちゅうしゃどり</div>
+    <div class="meta">HP 35 · 攻 30 · 防 1<br>经验 20 · 金钱 30 · BIONIC</div>
+    <div class="meta dim">48×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="机械蟹 053 カニガン">
+  <a class="thumb" href="怪物/053_机械蟹.gif" target="_blank">
+    <img loading="lazy" src="怪物/053_机械蟹.gif" alt="机械蟹">
+  </a>
+  <figcaption>
+    <div class="t"><b>053</b> 机械蟹</div>
+    <div class="ja">カニガン</div>
+    <div class="meta">HP 60 · 攻 108 · 防 84<br>经验 74 · 金钱 88 · CYBERNETIC</div>
+    <div class="meta dim">64×64px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="反坦克兵 054 アーミーゾンビ">
+  <a class="thumb" href="怪物/054_反坦克兵.gif" target="_blank">
+    <img loading="lazy" src="怪物/054_反坦克兵.gif" alt="反坦克兵">
+  </a>
+  <figcaption>
+    <div class="t"><b>054</b> 反坦克兵</div>
+    <div class="ja">アーミーゾンビ</div>
+    <div class="meta">HP 50 · 攻 170 · 防 83<br>经验 108 · 金钱 90 · BIONIC</div>
+    <div class="meta dim">48×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="装甲车 055 ガンボート">
+  <a class="thumb" href="怪物/055_装甲车.gif" target="_blank">
+    <img loading="lazy" src="怪物/055_装甲车.gif" alt="装甲车">
+  </a>
+  <figcaption>
+    <div class="t"><b>055</b> 装甲车</div>
+    <div class="ja">ガンボート</div>
+    <div class="meta">HP 20 · 攻 65 · 防 55<br>经验 39 · 金钱 48 · TANK</div>
+    <div class="meta dim">64×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="变形虫 056 DNAブロブ">
+  <a class="thumb" href="怪物/056_变形虫.gif" target="_blank">
+    <img loading="lazy" src="怪物/056_变形虫.gif" alt="变形虫">
+  </a>
+  <figcaption>
+    <div class="t"><b>056</b> 变形虫</div>
+    <div class="ja">DNAブロブ</div>
+    <div class="meta">HP 150 · 攻 18 · 防 20<br>经验 50 · 金钱 20 · BIONIC</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="起重机 057 マグネッター">
+  <a class="thumb" href="怪物/057_起重机.gif" target="_blank">
+    <img loading="lazy" src="怪物/057_起重机.gif" alt="起重机">
+  </a>
+  <figcaption>
+    <div class="t"><b>057</b> 起重机</div>
+    <div class="ja">マグネッター</div>
+    <div class="meta">HP 27 · 攻 125 · 防 41<br>经验 54 · 金钱 41 · TANK</div>
+    <div class="meta dim">64×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="粉碎机 058 スラッガー">
+  <a class="thumb" href="怪物/058_粉碎机.gif" target="_blank">
+    <img loading="lazy" src="怪物/058_粉碎机.gif" alt="粉碎机">
+  </a>
+  <figcaption>
+    <div class="t"><b>058</b> 粉碎机</div>
+    <div class="ja">スラッガー</div>
+    <div class="meta">HP 29 · 攻 170 · 防 45<br>经验 67 · 金钱 67 · TANK</div>
+    <div class="meta dim">64×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="高速车 059 ハイウェイタンク">
+  <a class="thumb" href="怪物/059_高速车.gif" target="_blank">
+    <img loading="lazy" src="怪物/059_高速车.gif" alt="高速车">
+  </a>
+  <figcaption>
+    <div class="t"><b>059</b> 高速车</div>
+    <div class="ja">ハイウェイタンク</div>
+    <div class="meta">HP 35 · 攻 195 · 防 60<br>经验 90 · 金钱 125 · TANK</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="侦察蝶 060 ていさつUFO">
+  <a class="thumb" href="怪物/060_侦察蝶.gif" target="_blank">
+    <img loading="lazy" src="怪物/060_侦察蝶.gif" alt="侦察蝶">
+  </a>
+  <figcaption>
+    <div class="t"><b>060</b> 侦察蝶</div>
+    <div class="ja">ていさつUFO</div>
+    <div class="meta">HP 25 · 攻 220 · 防 400<br>经验 40 · 金钱 170 · TANK</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="地雷龟 061 じらいもグラ">
+  <a class="thumb" href="怪物/061_地雷龟.gif" target="_blank">
+    <img loading="lazy" src="怪物/061_地雷龟.gif" alt="地雷龟">
+  </a>
+  <figcaption>
+    <div class="t"><b>061</b> 地雷龟</div>
+    <div class="ja">じらいもグラ</div>
+    <div class="meta">HP 68 · 攻 35 · 防 55<br>经验 28 · 金钱 120 · CYBERNETIC</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="毒蜘蛛 062 スポイトスパイダ">
+  <a class="thumb" href="怪物/062_毒蜘蛛.gif" target="_blank">
+    <img loading="lazy" src="怪物/062_毒蜘蛛.gif" alt="毒蜘蛛">
+  </a>
+  <figcaption>
+    <div class="t"><b>062</b> 毒蜘蛛</div>
+    <div class="ja">スポイトスパイダ</div>
+    <div class="meta">HP 72 · 攻 17 · 防 30<br>经验 40 · 金钱 78 · CYBERNETIC</div>
+    <div class="meta dim">64×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="导弹蛙 063 ミサイルフロッグ">
+  <a class="thumb" href="怪物/063_导弹蛙.gif" target="_blank">
+    <img loading="lazy" src="怪物/063_导弹蛙.gif" alt="导弹蛙">
+  </a>
+  <figcaption>
+    <div class="t"><b>063</b> 导弹蛙</div>
+    <div class="ja">ミサイルフロッグ</div>
+    <div class="meta">HP 168 · 攻 100 · 防 30<br>经验 45 · 金钱 76 · CYBERNETIC</div>
+    <div class="meta dim">64×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="魔鬼花 064 まどろ{OP2F}そう">
+  <a class="thumb" href="怪物/064_魔鬼花.gif" target="_blank">
+    <img loading="lazy" src="怪物/064_魔鬼花.gif" alt="魔鬼花">
+  </a>
+  <figcaption>
+    <div class="t"><b>064</b> 魔鬼花</div>
+    <div class="ja">まどろ{OP2F}そう</div>
+    <div class="meta">HP 99 · 攻 37 · 防 34<br>经验 14 · 金钱 87 · BIONIC</div>
+    <div class="meta dim">48×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="激光虫 065 レーザービートル">
+  <a class="thumb" href="怪物/065_激光虫.gif" target="_blank">
+    <img loading="lazy" src="怪物/065_激光虫.gif" alt="激光虫">
+  </a>
+  <figcaption>
+    <div class="t"><b>065</b> 激光虫</div>
+    <div class="ja">レーザービートル</div>
+    <div class="meta">HP 220 · 攻 280 · 防 150<br>经验 97 · 金钱 200 · CYBERNETIC</div>
+    <div class="meta dim">64×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="食人蚁 066 メタルイーター">
+  <a class="thumb" href="怪物/066_食人蚁.gif" target="_blank">
+    <img loading="lazy" src="怪物/066_食人蚁.gif" alt="食人蚁">
+  </a>
+  <figcaption>
+    <div class="t"><b>066</b> 食人蚁</div>
+    <div class="ja">メタルイーター</div>
+    <div class="meta">HP 6 · 攻 20 · 防 200<br>经验 210 · 金钱 1 · BIONIC</div>
+    <div class="meta dim">32×16px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="音速车 067 ハチのす{OPF3:10}">
+  <a class="thumb" href="怪物/067_音速车.gif" target="_blank">
+    <img loading="lazy" src="怪物/067_音速车.gif" alt="音速车">
+  </a>
+  <figcaption>
+    <div class="t"><b>067</b> 音速车</div>
+    <div class="ja">ハチのす{OPF3:10}</div>
+    <div class="meta">HP 30 · 攻 70 · 防 50<br>经验 67 · 金钱 170 · TANK</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="章鱼炮 068 なんたいキャノン">
+  <a class="thumb" href="怪物/068_章鱼炮.gif" target="_blank">
+    <img loading="lazy" src="怪物/068_章鱼炮.gif" alt="章鱼炮">
+  </a>
+  <figcaption>
+    <div class="t"><b>068</b> 章鱼炮</div>
+    <div class="ja">なんたいキャノン</div>
+    <div class="meta">HP 170 · 攻 174 · 防 83<br>经验 83 · 金钱 228 · BIONIC</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="声波蛇 069 ソニックコブラ">
+  <a class="thumb" href="怪物/069_声波蛇.gif" target="_blank">
+    <img loading="lazy" src="怪物/069_声波蛇.gif" alt="声波蛇">
+  </a>
+  <figcaption>
+    <div class="t"><b>069</b> 声波蛇</div>
+    <div class="ja">ソニックコブラ</div>
+    <div class="meta">HP 148 · 攻 235 · 防 107<br>经验 107 · 金钱 153 · CYBERNETIC</div>
+    <div class="meta dim">32×64px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="磁铁 070 さまようタイル">
+  <a class="thumb" href="怪物/070_磁铁.gif" target="_blank">
+    <img loading="lazy" src="怪物/070_磁铁.gif" alt="磁铁">
+  </a>
+  <figcaption>
+    <div class="t"><b>070</b> 磁铁</div>
+    <div class="ja">さまようタイル</div>
+    <div class="meta">HP 20 · 攻 10 · 防 10<br>经验 10 · 金钱 55 · TANK</div>
+    <div class="meta dim">32×16px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="军蚁 071 くろいじゅうたん">
+  <a class="thumb" href="怪物/071_军蚁.gif" target="_blank">
+    <img loading="lazy" src="怪物/071_军蚁.gif" alt="军蚁">
+  </a>
+  <figcaption>
+    <div class="t"><b>071</b> 军蚁</div>
+    <div class="ja">くろいじゅうたん</div>
+    <div class="meta">HP 200 · 攻 20 · 防 200<br>经验 6 · 金钱 80 · BIONIC</div>
+    <div class="meta dim">80×112px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="激光蚓 072 レーザーミミズ">
+  <a class="thumb" href="怪物/072_激光蚓.gif" target="_blank">
+    <img loading="lazy" src="怪物/072_激光蚓.gif" alt="激光蚓">
+  </a>
+  <figcaption>
+    <div class="t"><b>072</b> 激光蚓</div>
+    <div class="ja">レーザーミミズ</div>
+    <div class="meta">HP 20 · 攻 280 · 防 27<br>经验 38 · 金钱 129 · CYBERNETIC</div>
+    <div class="meta dim">32×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="神风弹 073 カミカゼボム">
+  <a class="thumb" href="怪物/073_神风弹.gif" target="_blank">
+    <img loading="lazy" src="怪物/073_神风弹.gif" alt="神风弹">
+  </a>
+  <figcaption>
+    <div class="t"><b>073</b> 神风弹</div>
+    <div class="ja">カミカゼボム</div>
+    <div class="meta">HP 24 · 攻 255 · 防 20<br>经验 48 · 金钱 70 · CYBERNETIC</div>
+    <div class="meta dim">48×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="合金鸟 074 メタルぺッカー">
+  <a class="thumb" href="怪物/074_合金鸟.gif" target="_blank">
+    <img loading="lazy" src="怪物/074_合金鸟.gif" alt="合金鸟">
+  </a>
+  <figcaption>
+    <div class="t"><b>074</b> 合金鸟</div>
+    <div class="ja">メタルぺッカー</div>
+    <div class="meta">HP 40 · 攻 304 · 防 90<br>经验 113 · 金钱 95 · CYBERNETIC</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="神武炮 075 おおづつ">
+  <a class="thumb" href="怪物/075_神武炮.gif" target="_blank">
+    <img loading="lazy" src="怪物/075_神武炮.gif" alt="神武炮">
+  </a>
+  <figcaption>
+    <div class="t"><b>075</b> 神武炮</div>
+    <div class="ja">おおづつ</div>
+    <div class="meta">HP 160 · 攻 400 · 防 272<br>经验 222 · 金钱 253 · TANK</div>
+    <div class="meta dim">64×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="车载炮 076 ミサイルボート">
+  <a class="thumb" href="怪物/076_车载炮.gif" target="_blank">
+    <img loading="lazy" src="怪物/076_车载炮.gif" alt="车载炮">
+  </a>
+  <figcaption>
+    <div class="t"><b>076</b> 车载炮</div>
+    <div class="ja">ミサイルボート</div>
+    <div class="meta">HP 31 · 攻 113 · 防 64<br>经验 125 · 金钱 230 · TANK</div>
+    <div class="meta dim">64×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="声波炮 077 じそうおんぱほう">
+  <a class="thumb" href="怪物/077_声波炮.gif" target="_blank">
+    <img loading="lazy" src="怪物/077_声波炮.gif" alt="声波炮">
+  </a>
+  <figcaption>
+    <div class="t"><b>077</b> 声波炮</div>
+    <div class="ja">じそうおんぱほう</div>
+    <div class="meta">HP 95 · 攻 268 · 防 238<br>经验 123 · 金钱 3 · TANK</div>
+    <div class="meta dim">64×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="巨型河马 078 グレート{OPF7:29,01}">
+  <a class="thumb" href="怪物/078_巨型河马.gif" target="_blank">
+    <img loading="lazy" src="怪物/078_巨型河马.gif" alt="巨型河马">
+  </a>
+  <figcaption>
+    <div class="t"><b>078</b> 巨型河马</div>
+    <div class="ja">グレート{OPF7:29,01}</div>
+    <div class="meta">HP 300 · 攻 312 · 防 264<br>经验 152 · 金钱 3 · CYBERNETIC</div>
+    <div class="meta dim">48×64px · 6 帧 · 6 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="指挥车 079 バルカンシャーク">
+  <a class="thumb" href="怪物/079_指挥车.gif" target="_blank">
+    <img loading="lazy" src="怪物/079_指挥车.gif" alt="指挥车">
+  </a>
+  <figcaption>
+    <div class="t"><b>079</b> 指挥车</div>
+    <div class="ja">バルカンシャーク</div>
+    <div class="meta">HP 35 · 攻 70 · 防 70<br>经验 95 · 金钱 154 · TANK</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="后备车 080 へルレスキュー">
+  <a class="thumb" href="怪物/080_后备车.gif" target="_blank">
+    <img loading="lazy" src="怪物/080_后备车.gif" alt="后备车">
+  </a>
+  <figcaption>
+    <div class="t"><b>080</b> 后备车</div>
+    <div class="ja">へルレスキュー</div>
+    <div class="meta">HP 35 · 攻 30 · 防 1<br>经验 143 · 金钱 50 · BIONIC</div>
+    <div class="meta dim">48×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="无坐力炮 081 ガンタワー">
+  <a class="thumb" href="怪物/081_无坐力炮.gif" target="_blank">
+    <img loading="lazy" src="怪物/081_无坐力炮.gif" alt="无坐力炮">
+  </a>
+  <figcaption>
+    <div class="t"><b>081</b> 无坐力炮</div>
+    <div class="ja">ガンタワー</div>
+    <div class="meta">HP 112 · 攻 284 · 防 253<br>经验 197 · 金钱 3 · TANK</div>
+    <div class="meta dim">48×64px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="雷达花 082 レーダーフラワー">
+  <a class="thumb" href="怪物/082_雷达花.gif" target="_blank">
+    <img loading="lazy" src="怪物/082_雷达花.gif" alt="雷达花">
+  </a>
+  <figcaption>
+    <div class="t"><b>082</b> 雷达花</div>
+    <div class="ja">レーダーフラワー</div>
+    <div class="meta">HP 1020 · 攻 255 · 防 620<br>经验 20 · 金钱 80 · CYBERNETIC</div>
+    <div class="meta dim">96×128px · 6 帧 · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="毒蜂 083 バイオバズズ">
+  <a class="thumb" href="怪物/083_毒蜂.gif" target="_blank">
+    <img loading="lazy" src="怪物/083_毒蜂.gif" alt="毒蜂">
+  </a>
+  <figcaption>
+    <div class="t"><b>083</b> 毒蜂</div>
+    <div class="ja">バイオバズズ</div>
+    <div class="meta">HP 72 · 攻 480 · 防 17<br>经验 7 · 金钱 70 · CYBERNETIC</div>
+    <div class="meta dim">32×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="离子虫 084 プラズマビートル">
+  <a class="thumb" href="怪物/084_离子虫.gif" target="_blank">
+    <img loading="lazy" src="怪物/084_离子虫.gif" alt="离子虫">
+  </a>
+  <figcaption>
+    <div class="t"><b>084</b> 离子虫</div>
+    <div class="ja">プラズマビートル</div>
+    <div class="meta">HP 80 · 攻 70 · 防 180<br>经验 124 · 金钱 70 · CYBERNETIC</div>
+    <div class="meta dim">64×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="沙漠虎 085 グラマータイガー">
+  <a class="thumb" href="怪物/085_沙漠虎.gif" target="_blank">
+    <img loading="lazy" src="怪物/085_沙漠虎.gif" alt="沙漠虎">
+  </a>
+  <figcaption>
+    <div class="t"><b>085</b> 沙漠虎</div>
+    <div class="ja">グラマータイガー</div>
+    <div class="meta">HP 100 · 攻 480 · 防 55<br>经验 250 · 金钱 100 · TANK</div>
+    <div class="meta dim">96×48px · 6 帧 · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="金蚁毯 086 きんのじゅうたん">
+  <a class="thumb" href="怪物/086_金蚁毯.gif" target="_blank">
+    <img loading="lazy" src="怪物/086_金蚁毯.gif" alt="金蚁毯">
+  </a>
+  <figcaption>
+    <div class="t"><b>086</b> 金蚁毯</div>
+    <div class="ja">きんのじゅうたん</div>
+    <div class="meta">HP 15 · 攻 15 · 防 800<br>经验 180 · 金钱 50 · BIONIC</div>
+    <div class="meta dim">80×112px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="声纳蛇 087 ソナースネーク">
+  <a class="thumb" href="怪物/087_声纳蛇.gif" target="_blank">
+    <img loading="lazy" src="怪物/087_声纳蛇.gif" alt="声纳蛇">
+  </a>
+  <figcaption>
+    <div class="t"><b>087</b> 声纳蛇</div>
+    <div class="ja">ソナースネーク</div>
+    <div class="meta">HP 72 · 攻 55 · 防 35<br>经验 90 · 金钱 50 · CYBERNETIC</div>
+    <div class="meta dim">32×64px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="塔吊 088 アイアンクロー">
+  <a class="thumb" href="怪物/088_塔吊.gif" target="_blank">
+    <img loading="lazy" src="怪物/088_塔吊.gif" alt="塔吊">
+  </a>
+  <figcaption>
+    <div class="t"><b>088</b> 塔吊</div>
+    <div class="ja">アイアンクロー</div>
+    <div class="meta">HP 50 · 攻 75 · 防 45<br>经验 77 · 金钱 40 · TANK</div>
+    <div class="meta dim">64×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="追踪弹 089 ボムランナー">
+  <a class="thumb" href="怪物/089_追踪弹.gif" target="_blank">
+    <img loading="lazy" src="怪物/089_追踪弹.gif" alt="追踪弹">
+  </a>
+  <figcaption>
+    <div class="t"><b>089</b> 追踪弹</div>
+    <div class="ja">ボムランナー</div>
+    <div class="meta">HP 4 · 攻 100 · 防 20<br>经验 115 · 金钱 90 · CYBERNETIC</div>
+    <div class="meta dim">32×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="生物枪 090 ぽたぽたキウイ">
+  <a class="thumb" href="怪物/090_生物枪.gif" target="_blank">
+    <img loading="lazy" src="怪物/090_生物枪.gif" alt="生物枪">
+  </a>
+  <figcaption>
+    <div class="t"><b>090</b> 生物枪</div>
+    <div class="ja">ぽたぽたキウイ</div>
+    <div class="meta">HP 72 · 攻 24 · 防 36<br>经验 75 · 金钱 125 · CYBERNETIC</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="导弹车 091 ミサイルキャりア">
+  <a class="thumb" href="怪物/091_导弹车.gif" target="_blank">
+    <img loading="lazy" src="怪物/091_导弹车.gif" alt="导弹车">
+  </a>
+  <figcaption>
+    <div class="t"><b>091</b> 导弹车</div>
+    <div class="ja">ミサイルキャりア</div>
+    <div class="meta">HP 80 · 攻 320 · 防 276<br>经验 3 · 金钱 3 · TANK</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="喷火鳄 092 ガソりンカイマン">
+  <a class="thumb" href="怪物/092_喷火鳄.gif" target="_blank">
+    <img loading="lazy" src="怪物/092_喷火鳄.gif" alt="喷火鳄">
+  </a>
+  <figcaption>
+    <div class="t"><b>092</b> 喷火鳄</div>
+    <div class="ja">ガソりンカイマン</div>
+    <div class="meta">HP 230 · 攻 440 · 防 360<br>经验 160 · 金钱 12 · BIONIC</div>
+    <div class="meta dim">64×64px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="AT坦克 093 ATエレファント">
+  <a class="thumb" href="怪物/093_AT坦克.gif" target="_blank">
+    <img loading="lazy" src="怪物/093_AT坦克.gif" alt="AT坦克">
+  </a>
+  <figcaption>
+    <div class="t"><b>093</b> AT坦克</div>
+    <div class="ja">ATエレファント</div>
+    <div class="meta">HP 132 · 攻 600 · 防 436<br>经验 14 · 金钱 94 · TANK</div>
+    <div class="meta dim">96×64px · 6 帧 · 6 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="铲车 094 じごくのストーブ">
+  <a class="thumb" href="怪物/094_铲车.gif" target="_blank">
+    <img loading="lazy" src="怪物/094_铲车.gif" alt="铲车">
+  </a>
+  <figcaption>
+    <div class="t"><b>094</b> 铲车</div>
+    <div class="ja">じごくのストーブ</div>
+    <div class="meta">HP 100 · 攻 90 · 防 95<br>经验 120 · 金钱 98 · TANK</div>
+    <div class="meta dim">64×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="电磁花 095 ラジオブロッサム">
+  <a class="thumb" href="怪物/095_电磁花.gif" target="_blank">
+    <img loading="lazy" src="怪物/095_电磁花.gif" alt="电磁花">
+  </a>
+  <figcaption>
+    <div class="t"><b>095</b> 电磁花</div>
+    <div class="ja">ラジオブロッサム</div>
+    <div class="meta">HP 508 · 攻 124 · 防 129<br>经验 10 · 金钱 180 · CYBERNETIC</div>
+    <div class="meta dim">48×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="巨蟹 096 バブル{OPF7:35,01}">
+  <a class="thumb" href="怪物/096_巨蟹.gif" target="_blank">
+    <img loading="lazy" src="怪物/096_巨蟹.gif" alt="巨蟹">
+  </a>
+  <figcaption>
+    <div class="t"><b>096</b> 巨蟹</div>
+    <div class="ja">バブル{OPF7:35,01}</div>
+    <div class="meta">HP 120 · 攻 400 · 防 80<br>经验 100 · 金钱 80 · CYBERNETIC</div>
+    <div class="meta dim">64×64px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="飞狗 097 そらとぶハイエナ">
+  <a class="thumb" href="怪物/097_飞狗.gif" target="_blank">
+    <img loading="lazy" src="怪物/097_飞狗.gif" alt="飞狗">
+  </a>
+  <figcaption>
+    <div class="t"><b>097</b> 飞狗</div>
+    <div class="ja">そらとぶハイエナ</div>
+    <div class="meta">HP 35 · 攻 138 · 防 45<br>经验 80 · 金钱 27 · BIONIC</div>
+    <div class="meta dim">48×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="铁甲炮 098 スローウォーカー">
+  <a class="thumb" href="怪物/098_铁甲炮.gif" target="_blank">
+    <img loading="lazy" src="怪物/098_铁甲炮.gif" alt="铁甲炮">
+  </a>
+  <figcaption>
+    <div class="t"><b>098</b> 铁甲炮</div>
+    <div class="ja">スローウォーカー</div>
+    <div class="meta">HP 100 · 攻 400 · 防 816<br>经验 130 · 金钱 150 · TANK</div>
+    <div class="meta dim">64×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="两栖车 099 ATアルマジロ">
+  <a class="thumb" href="怪物/099_两栖车.gif" target="_blank">
+    <img loading="lazy" src="怪物/099_两栖车.gif" alt="两栖车">
+  </a>
+  <figcaption>
+    <div class="t"><b>099</b> 两栖车</div>
+    <div class="ja">ATアルマジロ</div>
+    <div class="meta">HP 50 · 攻 60 · 防 560<br>经验 135 · 金钱 115 · TANK</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="导弹车(2) 100 ミサイルトレーラ">
+  <a class="thumb" href="怪物/100_导弹车(2).gif" target="_blank">
+    <img loading="lazy" src="怪物/100_导弹车(2).gif" alt="导弹车(2)">
+  </a>
+  <figcaption>
+    <div class="t"><b>100</b> 导弹车(2)</div>
+    <div class="ja">ミサイルトレーラ</div>
+    <div class="meta">HP 70 · 攻 255 · 防 40<br>经验 94 · 金钱 35 · TANK</div>
+    <div class="meta dim">64×32px · 6 帧 · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="噪音器 101 うたうパラボラ">
+  <a class="thumb" href="怪物/101_噪音器.gif" target="_blank">
+    <img loading="lazy" src="怪物/101_噪音器.gif" alt="噪音器">
+  </a>
+  <figcaption>
+    <div class="t"><b>101</b> 噪音器</div>
+    <div class="ja">うたうパラボラ</div>
+    <div class="meta">HP 111 · 攻 272 · 防 200<br>经验 242 · 金钱 6 · TANK</div>
+    <div class="meta dim">64×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="狙击车 102 ATグりズりー">
+  <a class="thumb" href="怪物/102_狙击车.gif" target="_blank">
+    <img loading="lazy" src="怪物/102_狙击车.gif" alt="狙击车">
+  </a>
+  <figcaption>
+    <div class="t"><b>102</b> 狙击车</div>
+    <div class="ja">ATグりズりー</div>
+    <div class="meta">HP 85 · 攻 400 · 防 255<br>经验 190 · 金钱 66 · TANK</div>
+    <div class="meta dim">48×64px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="离子坦克 103 プラズマタンク">
+  <a class="thumb" href="怪物/103_离子坦克.gif" target="_blank">
+    <img loading="lazy" src="怪物/103_离子坦克.gif" alt="离子坦克">
+  </a>
+  <figcaption>
+    <div class="t"><b>103</b> 离子坦克</div>
+    <div class="ja">プラズマタンク</div>
+    <div class="meta">HP 78 · 攻 130 · 防 78<br>经验 140 · 金钱 72 · TANK</div>
+    <div class="meta dim">64×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="沙漠车 104 デザートもンロー">
+  <a class="thumb" href="怪物/104_沙漠车.gif" target="_blank">
+    <img loading="lazy" src="怪物/104_沙漠车.gif" alt="沙漠车">
+  </a>
+  <figcaption>
+    <div class="t"><b>104</b> 沙漠车</div>
+    <div class="ja">デザートもンロー</div>
+    <div class="meta">HP 150 · 攻 480 · 防 120<br>经验 240 · 金钱 200 · TANK</div>
+    <div class="meta dim">96×48px · 6 帧 · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="ATM战车 105 ATMシャーク">
+  <a class="thumb" href="怪物/105_ATM战车.gif" target="_blank">
+    <img loading="lazy" src="怪物/105_ATM战车.gif" alt="ATM战车">
+  </a>
+  <figcaption>
+    <div class="t"><b>105</b> ATM战车</div>
+    <div class="ja">ATMシャーク</div>
+    <div class="meta">HP 80 · 攻 140 · 防 65<br>经验 180 · 金钱 108 · TANK</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="龟式战车 106 スピードタートル">
+  <a class="thumb" href="怪物/106_龟式战车.gif" target="_blank">
+    <img loading="lazy" src="怪物/106_龟式战车.gif" alt="龟式战车">
+  </a>
+  <figcaption>
+    <div class="t"><b>106</b> 龟式战车</div>
+    <div class="ja">スピードタートル</div>
+    <div class="meta">HP 63 · 攻 280 · 防 760<br>经验 210 · 金钱 192 · TANK</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="AT坦克(2) 107 ATギガンテス">
+  <a class="thumb" href="怪物/107_AT坦克(2).gif" target="_blank">
+    <img loading="lazy" src="怪物/107_AT坦克(2).gif" alt="AT坦克(2)">
+  </a>
+  <figcaption>
+    <div class="t"><b>107</b> AT坦克(2)</div>
+    <div class="ja">ATギガンテス</div>
+    <div class="meta">HP 150 · 攻 840 · 防 150<br>经验 3 · 金钱 188 · TANK</div>
+    <div class="meta dim">96×64px · 6 帧 · 6 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="猎杀者 108 メデューサ">
+  <a class="thumb" href="怪物/108_猎杀者.gif" target="_blank">
+    <img loading="lazy" src="怪物/108_猎杀者.gif" alt="猎杀者">
+  </a>
+  <figcaption>
+    <div class="t"><b>108</b> 猎杀者</div>
+    <div class="ja">メデューサ</div>
+    <div class="meta">HP 200 · 攻 720 · 防 200<br>经验 10 · 金钱 5 · TANK</div>
+    <div class="meta dim">96×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="拦截蝶 109 ガンバルン">
+  <a class="thumb" href="怪物/109_拦截蝶.gif" target="_blank">
+    <img loading="lazy" src="怪物/109_拦截蝶.gif" alt="拦截蝶">
+  </a>
+  <figcaption>
+    <div class="t"><b>109</b> 拦截蝶</div>
+    <div class="ja">ガンバルン</div>
+    <div class="meta">HP 50 · 攻 255 · 防 110<br>经验 28 · 金钱 43 · TANK</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="水鬼(2) 110 メチルアマゾン">
+  <a class="thumb" href="怪物/110_水鬼(2).gif" target="_blank">
+    <img loading="lazy" src="怪物/110_水鬼(2).gif" alt="水鬼(2)">
+  </a>
+  <figcaption>
+    <div class="t"><b>110</b> 水鬼(2)</div>
+    <div class="ja">メチルアマゾン</div>
+    <div class="meta">HP 80 · 攻 320 · 防 84<br>经验 110 · 金钱 65 · BIONIC</div>
+    <div class="meta dim">32×64px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="碉堡 111 ガンホール">
+  <a class="thumb" href="怪物/111_碉堡.gif" target="_blank">
+    <img loading="lazy" src="怪物/111_碉堡.gif" alt="碉堡">
+  </a>
+  <figcaption>
+    <div class="t"><b>111</b> 碉堡</div>
+    <div class="ja">ガンホール</div>
+    <div class="meta">HP 35 · 攻 150 · 防 190<br>经验 45 · 金钱 65 · TANK</div>
+    <div class="meta dim">32×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="监视器 112 かんしカメラ">
+  <a class="thumb" href="怪物/112_监视器.gif" target="_blank">
+    <img loading="lazy" src="怪物/112_监视器.gif" alt="监视器">
+  </a>
+  <figcaption>
+    <div class="t"><b>112</b> 监视器</div>
+    <div class="ja">かんしカメラ</div>
+    <div class="meta">HP 8 · 攻 1 · 防 40<br>经验 2 · 金钱 1 · TANK</div>
+    <div class="meta dim">32×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="防御器 113 バットシステム">
+  <a class="thumb" href="怪物/113_防御器.gif" target="_blank">
+    <img loading="lazy" src="怪物/113_防御器.gif" alt="防御器">
+  </a>
+  <figcaption>
+    <div class="t"><b>113</b> 防御器</div>
+    <div class="ja">バットシステム</div>
+    <div class="meta">HP 28 · 攻 50 · 防 40<br>经验 23 · 金钱 10 · TANK</div>
+    <div class="meta dim">48×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="催眠器 114 アンチロバー">
+  <a class="thumb" href="怪物/114_催眠器.gif" target="_blank">
+    <img loading="lazy" src="怪物/114_催眠器.gif" alt="催眠器">
+  </a>
+  <figcaption>
+    <div class="t"><b>114</b> 催眠器</div>
+    <div class="ja">アンチロバー</div>
+    <div class="meta">HP 24 · 攻 80 · 防 40<br>经验 30 · 金钱 15 · TANK</div>
+    <div class="meta dim">48×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="光防御器 115 スネークホール">
+  <a class="thumb" href="怪物/115_光防御器.gif" target="_blank">
+    <img loading="lazy" src="怪物/115_光防御器.gif" alt="光防御器">
+  </a>
+  <figcaption>
+    <div class="t"><b>115</b> 光防御器</div>
+    <div class="ja">スネークホール</div>
+    <div class="meta">HP 8 · 攻 224 · 防 150<br>经验 80 · 金钱 23 · TANK</div>
+    <div class="meta dim">48×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="扫描仪 116 レーザーアイ">
+  <a class="thumb" href="怪物/116_扫描仪.gif" target="_blank">
+    <img loading="lazy" src="怪物/116_扫描仪.gif" alt="扫描仪">
+  </a>
+  <figcaption>
+    <div class="t"><b>116</b> 扫描仪</div>
+    <div class="ja">レーザーアイ</div>
+    <div class="meta">HP 18 · 攻 176 · 防 40<br>经验 40 · 金钱 10 · TANK</div>
+    <div class="meta dim">32×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="声纳车 117 ソニックスタナー">
+  <a class="thumb" href="怪物/117_声纳车.gif" target="_blank">
+    <img loading="lazy" src="怪物/117_声纳车.gif" alt="声纳车">
+  </a>
+  <figcaption>
+    <div class="t"><b>117</b> 声纳车</div>
+    <div class="ja">ソニックスタナー</div>
+    <div class="meta">HP 22 · 攻 40 · 防 40<br>经验 60 · 金钱 26 · TANK</div>
+    <div class="meta dim">48×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="歼灭者 118 ビームスぺクター">
+  <a class="thumb" href="怪物/118_歼灭者.gif" target="_blank">
+    <img loading="lazy" src="怪物/118_歼灭者.gif" alt="歼灭者">
+  </a>
+  <figcaption>
+    <div class="t"><b>118</b> 歼灭者</div>
+    <div class="ja">ビームスぺクター</div>
+    <div class="meta">HP 20 · 攻 35 · 防 40<br>经验 46 · 金钱 16 · TANK</div>
+    <div class="meta dim">48×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="侦察者 119 キラークロゼット">
+  <a class="thumb" href="怪物/119_侦察者.gif" target="_blank">
+    <img loading="lazy" src="怪物/119_侦察者.gif" alt="侦察者">
+  </a>
+  <figcaption>
+    <div class="t"><b>119</b> 侦察者</div>
+    <div class="ja">キラークロゼット</div>
+    <div class="meta">HP 80 · 攻 120 · 防 80<br>经验 22 · 金钱 100 · BIONIC</div>
+    <div class="meta dim">64×48px · 6 帧 · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="毒蝙蝠 120 ウイルスバット">
+  <a class="thumb" href="怪物/120_毒蝙蝠.gif" target="_blank">
+    <img loading="lazy" src="怪物/120_毒蝙蝠.gif" alt="毒蝙蝠">
+  </a>
+  <figcaption>
+    <div class="t"><b>120</b> 毒蝙蝠</div>
+    <div class="ja">ウイルスバット</div>
+    <div class="meta">HP 100 · 攻 10 · 防 20<br>经验 8 · 金钱 4 · CYBERNETIC</div>
+    <div class="meta dim">48×32px · 6 帧 · 6 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="反坦克兵(2) 121 GIスケルトン">
+  <a class="thumb" href="怪物/121_反坦克兵(2).gif" target="_blank">
+    <img loading="lazy" src="怪物/121_反坦克兵(2).gif" alt="反坦克兵(2)">
+  </a>
+  <figcaption>
+    <div class="t"><b>121</b> 反坦克兵(2)</div>
+    <div class="ja">GIスケルトン</div>
+    <div class="meta">HP 50 · 攻 440 · 防 166<br>经验 70 · 金钱 3 · BIONIC</div>
+    <div class="meta dim">48×48px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="智能人 122 コードゴーレム">
+  <a class="thumb" href="怪物/122_智能人.gif" target="_blank">
+    <img loading="lazy" src="怪物/122_智能人.gif" alt="智能人">
+  </a>
+  <figcaption>
+    <div class="t"><b>122</b> 智能人</div>
+    <div class="ja">コードゴーレム</div>
+    <div class="meta">HP 204 · 攻 187 · 防 79<br>经验 8 · 金钱 200 · CYBERNETIC</div>
+    <div class="meta dim">48×64px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="超导虫 123 ちょうでんどうX">
+  <a class="thumb" href="怪物/123_超导虫.gif" target="_blank">
+    <img loading="lazy" src="怪物/123_超导虫.gif" alt="超导虫">
+  </a>
+  <figcaption>
+    <div class="t"><b>123</b> 超导虫</div>
+    <div class="ja">ちょうでんどうX</div>
+    <div class="meta">HP 200 · 攻 74 · 防 27<br>经验 11 · 金钱 210 · BIONIC</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="僵尸 124 デストロイド">
+  <a class="thumb" href="怪物/124_僵尸.gif" target="_blank">
+    <img loading="lazy" src="怪物/124_僵尸.gif" alt="僵尸">
+  </a>
+  <figcaption>
+    <div class="t"><b>124</b> 僵尸</div>
+    <div class="ja">デストロイド</div>
+    <div class="meta">HP 45 · 攻 150 · 防 79<br>经验 147 · 金钱 15 · TANK</div>
+    <div class="meta dim">48×64px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="攻击机 125 バーサーカー">
+  <a class="thumb" href="怪物/125_攻击机.gif" target="_blank">
+    <img loading="lazy" src="怪物/125_攻击机.gif" alt="攻击机">
+  </a>
+  <figcaption>
+    <div class="t"><b>125</b> 攻击机</div>
+    <div class="ja">バーサーカー</div>
+    <div class="meta">HP 199 · 攻 255 · 防 151<br>经验 15 · 金钱 7 · TANK</div>
+    <div class="meta dim">80×128px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="地狱 126 {OPF3:90}ジゴク">
+  <a class="thumb" href="怪物/126_地狱.gif" target="_blank">
+    <img loading="lazy" src="怪物/126_地狱.gif" alt="地狱">
+  </a>
+  <figcaption>
+    <div class="t"><b>126</b> 地狱</div>
+    <div class="ja">{OPF3:90}ジゴク</div>
+    <div class="meta">HP 484 · 攻 400 · 防 392<br>经验 20 · 金钱 4 · CYBERNETIC</div>
+    <div class="meta dim">96×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="鬼手 127 ミミックボックス">
+  <a class="thumb" href="怪物/127_鬼手.gif" target="_blank">
+    <img loading="lazy" src="怪物/127_鬼手.gif" alt="鬼手">
+  </a>
+  <figcaption>
+    <div class="t"><b>127</b> 鬼手</div>
+    <div class="ja">ミミックボックス</div>
+    <div class="meta">HP 70 · 攻 240 · 防 70<br>经验 200 · 金钱 14 · BIONIC</div>
+    <div class="meta dim">48×32px · 6 帧 · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="机器人 128 ガードゴーレム">
+  <a class="thumb" href="怪物/128_机器人.gif" target="_blank">
+    <img loading="lazy" src="怪物/128_机器人.gif" alt="机器人">
+  </a>
+  <figcaption>
+    <div class="t"><b>128</b> 机器人</div>
+    <div class="ja">ガードゴーレム</div>
+    <div class="meta">HP 800 · 攻 800 · 防 640<br>经验 0 · 金钱 0 · CYBERNETIC</div>
+    <div class="meta dim">48×128px · 6 帧 · 6 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="诺亚 129 ノア">
+  <a class="thumb" href="怪物/129_诺亚.gif" target="_blank">
+    <img loading="lazy" src="怪物/129_诺亚.gif" alt="诺亚">
+  </a>
+  <figcaption>
+    <div class="t"><b>129</b> 诺亚</div>
+    <div class="ja">ノア</div>
+    <div class="meta">HP 1020 · 攻 1020 · 防 1020<br>经验 0 · 金钱 0 · CYBERNETIC</div>
+    <div class="meta dim">96×128px · 6 帧 · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="诺亚(2) 130 ノア">
+  <a class="thumb" href="怪物/130_诺亚(2).gif" target="_blank">
+    <img loading="lazy" src="怪物/130_诺亚(2).gif" alt="诺亚(2)">
+  </a>
+  <figcaption>
+    <div class="t"><b>130</b> 诺亚(2)</div>
+    <div class="ja">ノア</div>
+    <div class="meta">HP 1020 · 攻 720 · 防 820<br>经验 0 · 金钱 0 · CYBERNETIC</div>
+    <div class="meta dim">96×128px · 6 帧 · 5 色</div>
+  </figcaption>
+</figure></div>
+  <h2 id="cha">人物 <span class="n">112 种 · GIF 依次演示 下/左/上/右 的行走两帧</span><a class="zip" href="帧图_人物.zip">下载逐帧 PNG（ZIP）</a></h2>
+  <div class="grid"><figure class="card" data-k="人物·类型001 001 科罗纳大楼">
+  <a class="thumb tall" href="人物/001_人物001.gif" target="_blank">
+    <img loading="lazy" src="人物/001_人物001.gif" alt="人物·类型001">
+  </a>
+  <figcaption>
+    <div class="t"><b>001</b> 人物·类型001</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">科罗纳大楼</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型003 002 地图43、地铁、科罗纳大楼 B1、科罗纳大楼 B2、科罗纳大楼 B1、科罗纳大楼 B1">
+  <a class="thumb tall" href="人物/002_人物003.gif" target="_blank">
+    <img loading="lazy" src="人物/002_人物003.gif" alt="人物·类型003">
+  </a>
+  <figcaption>
+    <div class="t"><b>002</b> 人物·类型003</div>
+    <div class="ja">出场 12 张地图</div>
+    <div class="meta">地图43、地铁、科罗纳大楼 B1、科罗纳大楼 B2、科罗纳大楼 B1、科罗纳大楼 B1 等 12 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型004 003 瀑布潭巢穴 B1">
+  <a class="thumb tall" href="人物/003_人物004.gif" target="_blank">
+    <img loading="lazy" src="人物/003_人物004.gif" alt="人物·类型004">
+  </a>
+  <figcaption>
+    <div class="t"><b>003</b> 人物·类型004</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">瀑布潭巢穴 B1</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型014 004 地图125">
+  <a class="thumb tall" href="人物/004_人物014.gif" target="_blank">
+    <img loading="lazy" src="人物/004_人物014.gif" alt="人物·类型014">
+  </a>
+  <figcaption>
+    <div class="t"><b>004</b> 人物·类型014</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">地图125</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型017 005 弗里西">
+  <a class="thumb tall" href="人物/005_人物017.gif" target="_blank">
+    <img loading="lazy" src="人物/005_人物017.gif" alt="人物·类型017">
+  </a>
+  <figcaption>
+    <div class="t"><b>005</b> 人物·类型017</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">弗里西</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型039 006 车库2F">
+  <a class="thumb tall" href="人物/006_人物039.gif" target="_blank">
+    <img loading="lazy" src="人物/006_人物039.gif" alt="人物·类型039">
+  </a>
+  <figcaption>
+    <div class="t"><b>006</b> 人物·类型039</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">车库2F</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型042 007 弗里西">
+  <a class="thumb tall" href="人物/007_人物042.gif" target="_blank">
+    <img loading="lazy" src="人物/007_人物042.gif" alt="人物·类型042">
+  </a>
+  <figcaption>
+    <div class="t"><b>007</b> 人物·类型042</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">弗里西</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型045 008 乌利乌爷爷家">
+  <a class="thumb tall" href="人物/008_人物045.gif" target="_blank">
+    <img loading="lazy" src="人物/008_人物045.gif" alt="人物·类型045">
+  </a>
+  <figcaption>
+    <div class="t"><b>008</b> 人物·类型045</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">乌利乌爷爷家</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型054 009 地图36">
+  <a class="thumb tall" href="人物/009_人物054.gif" target="_blank">
+    <img loading="lazy" src="人物/009_人物054.gif" alt="人物·类型054">
+  </a>
+  <figcaption>
+    <div class="t"><b>009</b> 人物·类型054</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">地图36</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型060 010 酒吧、地图11、地图16、地图20、地图21、地图51">
+  <a class="thumb tall" href="人物/010_人物060.gif" target="_blank">
+    <img loading="lazy" src="人物/010_人物060.gif" alt="人物·类型060">
+  </a>
+  <figcaption>
+    <div class="t"><b>010</b> 人物·类型060</div>
+    <div class="ja">出场 16 张地图</div>
+    <div class="meta">酒吧、地图11、地图16、地图20、地图21、地图51 等 16 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型061 011 酒吧、波布、地图20、地图24、地图25、地图26">
+  <a class="thumb tall" href="人物/011_人物061.gif" target="_blank">
+    <img loading="lazy" src="人物/011_人物061.gif" alt="人物·类型061">
+  </a>
+  <figcaption>
+    <div class="t"><b>011</b> 人物·类型061</div>
+    <div class="ja">出场 32 张地图</div>
+    <div class="meta">酒吧、波布、地图20、地图24、地图25、地图26 等 32 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型062 012 旅馆、麦基、地图14、地图15、地图43、弗里">
+  <a class="thumb tall" href="人物/012_人物062.gif" target="_blank">
+    <img loading="lazy" src="人物/012_人物062.gif" alt="人物·类型062">
+  </a>
+  <figcaption>
+    <div class="t"><b>012</b> 人物·类型062</div>
+    <div class="ja">出场 11 张地图</div>
+    <div class="meta">旅馆、麦基、地图14、地图15、地图43、弗里 等 11 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型063 013 拉多、旅馆2F、商店、波布、地图32、地图36">
+  <a class="thumb tall" href="人物/013_人物063.gif" target="_blank">
+    <img loading="lazy" src="人物/013_人物063.gif" alt="人物·类型063">
+  </a>
+  <figcaption>
+    <div class="t"><b>013</b> 人物·类型063</div>
+    <div class="ja">出场 15 张地图</div>
+    <div class="meta">拉多、旅馆2F、商店、波布、地图32、地图36 等 15 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型065 014 奥多、地图180">
+  <a class="thumb tall" href="人物/014_人物065.gif" target="_blank">
+    <img loading="lazy" src="人物/014_人物065.gif" alt="人物·类型065">
+  </a>
+  <figcaption>
+    <div class="t"><b>014</b> 人物·类型065</div>
+    <div class="ja">出场 2 张地图</div>
+    <div class="meta">奥多、地图180</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型068 015 明奇博士家">
+  <a class="thumb tall" href="人物/015_人物068.gif" target="_blank">
+    <img loading="lazy" src="人物/015_人物068.gif" alt="人物·类型068">
+  </a>
+  <figcaption>
+    <div class="t"><b>015</b> 人物·类型068</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">明奇博士家</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型069 016 明奇博士家">
+  <a class="thumb tall" href="人物/016_人物069.gif" target="_blank">
+    <img loading="lazy" src="人物/016_人物069.gif" alt="人物·类型069">
+  </a>
+  <figcaption>
+    <div class="t"><b>016</b> 人物·类型069</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">明奇博士家</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型072 017 麦基、地图19、地图29、地图31、地图33、罗克">
+  <a class="thumb tall" href="人物/017_人物072.gif" target="_blank">
+    <img loading="lazy" src="人物/017_人物072.gif" alt="人物·类型072">
+  </a>
+  <figcaption>
+    <div class="t"><b>017</b> 人物·类型072</div>
+    <div class="ja">出场 9 张地图</div>
+    <div class="meta">麦基、地图19、地图29、地图31、地图33、罗克 等 9 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型073 018 旅馆、地图13、地图15、地图26、地图37、塔镇">
+  <a class="thumb tall" href="人物/018_人物073.gif" target="_blank">
+    <img loading="lazy" src="人物/018_人物073.gif" alt="人物·类型073">
+  </a>
+  <figcaption>
+    <div class="t"><b>018</b> 人物·类型073</div>
+    <div class="ja">出场 16 张地图</div>
+    <div class="meta">旅馆、地图13、地图15、地图26、地图37、塔镇 等 16 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型074 019 车库2F、伊尔、地图78、卡拉、地图103、地图232">
+  <a class="thumb tall" href="人物/019_人物074.gif" target="_blank">
+    <img loading="lazy" src="人物/019_人物074.gif" alt="人物·类型074">
+  </a>
+  <figcaption>
+    <div class="t"><b>019</b> 人物·类型074</div>
+    <div class="ja">出场 6 张地图</div>
+    <div class="meta">车库2F、伊尔、地图78、卡拉、地图103、地图232</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型075 020 车库1F、波布、地图53">
+  <a class="thumb tall" href="人物/020_人物075.gif" target="_blank">
+    <img loading="lazy" src="人物/020_人物075.gif" alt="人物·类型075">
+  </a>
+  <figcaption>
+    <div class="t"><b>020</b> 人物·类型075</div>
+    <div class="ja">出场 3 张地图</div>
+    <div class="meta">车库1F、波布、地图53</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型077 021 森林隐村、电波塔 B2、地图167">
+  <a class="thumb tall" href="人物/021_人物077.gif" target="_blank">
+    <img loading="lazy" src="人物/021_人物077.gif" alt="人物·类型077">
+  </a>
+  <figcaption>
+    <div class="t"><b>021</b> 人物·类型077</div>
+    <div class="ja">出场 3 张地图</div>
+    <div class="meta">森林隐村、电波塔 B2、地图167</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型080 022 地图96、地图112、地图123、地图124、穴居人之穴、地图140">
+  <a class="thumb tall" href="人物/022_人物080.gif" target="_blank">
+    <img loading="lazy" src="人物/022_人物080.gif" alt="人物·类型080">
+  </a>
+  <figcaption>
+    <div class="t"><b>022</b> 人物·类型080</div>
+    <div class="ja">出场 6 张地图</div>
+    <div class="meta">地图96、地图112、地图123、地图124、穴居人之穴、地图140</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型081 023 地图11、地图54、地图93、地图96、森林隐村、地图125">
+  <a class="thumb tall" href="人物/023_人物081.gif" target="_blank">
+    <img loading="lazy" src="人物/023_人物081.gif" alt="人物·类型081">
+  </a>
+  <figcaption>
+    <div class="t"><b>023</b> 人物·类型081</div>
+    <div class="ja">出场 7 张地图</div>
+    <div class="meta">地图11、地图54、地图93、地图96、森林隐村、地图125 等 7 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型082 024 旅馆2F、地图142">
+  <a class="thumb tall" href="人物/024_人物082.gif" target="_blank">
+    <img loading="lazy" src="人物/024_人物082.gif" alt="人物·类型082">
+  </a>
+  <figcaption>
+    <div class="t"><b>024</b> 人物·类型082</div>
+    <div class="ja">出场 2 张地图</div>
+    <div class="meta">旅馆2F、地图142</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型083 025 地图11、地图105">
+  <a class="thumb tall" href="人物/025_人物083.gif" target="_blank">
+    <img loading="lazy" src="人物/025_人物083.gif" alt="人物·类型083">
+  </a>
+  <figcaption>
+    <div class="t"><b>025</b> 人物·类型083</div>
+    <div class="ja">出场 2 张地图</div>
+    <div class="meta">地图11、地图105</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型084 026 地图15、地图20、地图30、地图52、伊尔、战车渡口 B1">
+  <a class="thumb tall" href="人物/026_人物084.gif" target="_blank">
+    <img loading="lazy" src="人物/026_人物084.gif" alt="人物·类型084">
+  </a>
+  <figcaption>
+    <div class="t"><b>026</b> 人物·类型084</div>
+    <div class="ja">出场 12 张地图</div>
+    <div class="meta">地图15、地图20、地图30、地图52、伊尔、战车渡口 B1 等 12 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型085 027 拉多、酒吧、地图11、地图22、地图33、地图38">
+  <a class="thumb tall" href="人物/027_人物085.gif" target="_blank">
+    <img loading="lazy" src="人物/027_人物085.gif" alt="人物·类型085">
+  </a>
+  <figcaption>
+    <div class="t"><b>027</b> 人物·类型085</div>
+    <div class="ja">出场 20 张地图</div>
+    <div class="meta">拉多、酒吧、地图11、地图22、地图33、地图38 等 20 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型086 028 地图52、科罗纳大楼 B1">
+  <a class="thumb tall" href="人物/028_人物086.gif" target="_blank">
+    <img loading="lazy" src="人物/028_人物086.gif" alt="人物·类型086">
+  </a>
+  <figcaption>
+    <div class="t"><b>028</b> 人物·类型086</div>
+    <div class="ja">出场 2 张地图</div>
+    <div class="meta">地图52、科罗纳大楼 B1</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型087 029 旅馆2F、地图31、地图43、地图136">
+  <a class="thumb tall" href="人物/029_人物087.gif" target="_blank">
+    <img loading="lazy" src="人物/029_人物087.gif" alt="人物·类型087">
+  </a>
+  <figcaption>
+    <div class="t"><b>029</b> 人物·类型087</div>
+    <div class="ja">出场 4 张地图</div>
+    <div class="meta">旅馆2F、地图31、地图43、地图136</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型088 030 地图46、地图51">
+  <a class="thumb tall" href="人物/030_人物088.gif" target="_blank">
+    <img loading="lazy" src="人物/030_人物088.gif" alt="人物·类型088">
+  </a>
+  <figcaption>
+    <div class="t"><b>030</b> 人物·类型088</div>
+    <div class="ja">出场 2 张地图</div>
+    <div class="meta">地图46、地图51</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型089 031 车库1F、地图25、地图28、地图30、地图32、地图57">
+  <a class="thumb tall" href="人物/031_人物089.gif" target="_blank">
+    <img loading="lazy" src="人物/031_人物089.gif" alt="人物·类型089">
+  </a>
+  <figcaption>
+    <div class="t"><b>031</b> 人物·类型089</div>
+    <div class="ja">出场 11 张地图</div>
+    <div class="meta">车库1F、地图25、地图28、地图30、地图32、地图57 等 11 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型090 032 地图45、地图53、地图59、战车渡口 B1、地图89、地图101">
+  <a class="thumb tall" href="人物/032_人物090.gif" target="_blank">
+    <img loading="lazy" src="人物/032_人物090.gif" alt="人物·类型090">
+  </a>
+  <figcaption>
+    <div class="t"><b>032</b> 人物·类型090</div>
+    <div class="ja">出场 6 张地图</div>
+    <div class="meta">地图45、地图53、地图59、战车渡口 B1、地图89、地图101</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型091 033 地图22、地图25、地图92、地图110">
+  <a class="thumb tall" href="人物/033_人物091.gif" target="_blank">
+    <img loading="lazy" src="人物/033_人物091.gif" alt="人物·类型091">
+  </a>
+  <figcaption>
+    <div class="t"><b>033</b> 人物·类型091</div>
+    <div class="ja">出场 4 张地图</div>
+    <div class="meta">地图22、地图25、地图92、地图110</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型092 034 地图74">
+  <a class="thumb tall" href="人物/034_人物092.gif" target="_blank">
+    <img loading="lazy" src="人物/034_人物092.gif" alt="人物·类型092">
+  </a>
+  <figcaption>
+    <div class="t"><b>034</b> 人物·类型092</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">地图74</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型093 035 地图25、地图30、地图32、地图45、地图52、地图57">
+  <a class="thumb tall" href="人物/035_人物093.gif" target="_blank">
+    <img loading="lazy" src="人物/035_人物093.gif" alt="人物·类型093">
+  </a>
+  <figcaption>
+    <div class="t"><b>035</b> 人物·类型093</div>
+    <div class="ja">出场 13 张地图</div>
+    <div class="meta">地图25、地图30、地图32、地图45、地图52、地图57 等 13 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型094 036 战车渡口 B1、地图92、地图224">
+  <a class="thumb tall" href="人物/036_人物094.gif" target="_blank">
+    <img loading="lazy" src="人物/036_人物094.gif" alt="人物·类型094">
+  </a>
+  <figcaption>
+    <div class="t"><b>036</b> 人物·类型094</div>
+    <div class="ja">出场 3 张地图</div>
+    <div class="meta">战车渡口 B1、地图92、地图224</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型095 037 地图53、地图101">
+  <a class="thumb tall" href="人物/037_人物095.gif" target="_blank">
+    <img loading="lazy" src="人物/037_人物095.gif" alt="人物·类型095">
+  </a>
+  <figcaption>
+    <div class="t"><b>037</b> 人物·类型095</div>
+    <div class="ja">出场 2 张地图</div>
+    <div class="meta">地图53、地图101</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 5 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型096 038 地图15、地图37、地图55">
+  <a class="thumb tall" href="人物/038_人物096.gif" target="_blank">
+    <img loading="lazy" src="人物/038_人物096.gif" alt="人物·类型096">
+  </a>
+  <figcaption>
+    <div class="t"><b>038</b> 人物·类型096</div>
+    <div class="ja">出场 3 张地图</div>
+    <div class="meta">地图15、地图37、地图55</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型097 039 地图23、地图30、地图37、地图60、地图79、地图106">
+  <a class="thumb tall" href="人物/039_人物097.gif" target="_blank">
+    <img loading="lazy" src="人物/039_人物097.gif" alt="人物·类型097">
+  </a>
+  <figcaption>
+    <div class="t"><b>039</b> 人物·类型097</div>
+    <div class="ja">出场 7 张地图</div>
+    <div class="meta">地图23、地图30、地图37、地图60、地图79、地图106 等 7 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型098 040 地图41、战车渡口 B1、地图94">
+  <a class="thumb tall" href="人物/040_人物098.gif" target="_blank">
+    <img loading="lazy" src="人物/040_人物098.gif" alt="人物·类型098">
+  </a>
+  <figcaption>
+    <div class="t"><b>040</b> 人物·类型098</div>
+    <div class="ja">出场 3 张地图</div>
+    <div class="meta">地图41、战车渡口 B1、地图94</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型099 041 商店">
+  <a class="thumb tall" href="人物/041_人物099.gif" target="_blank">
+    <img loading="lazy" src="人物/041_人物099.gif" alt="人物·类型099">
+  </a>
+  <figcaption>
+    <div class="t"><b>041</b> 人物·类型099</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">商店</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型100 042 地图22、地图37">
+  <a class="thumb tall" href="人物/042_人物100.gif" target="_blank">
+    <img loading="lazy" src="人物/042_人物100.gif" alt="人物·类型100">
+  </a>
+  <figcaption>
+    <div class="t"><b>042</b> 人物·类型100</div>
+    <div class="ja">出场 2 张地图</div>
+    <div class="meta">地图22、地图37</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 4 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型101 043 商店、地图15、地图23、地图37、地图79、地图94">
+  <a class="thumb tall" href="人物/043_人物101.gif" target="_blank">
+    <img loading="lazy" src="人物/043_人物101.gif" alt="人物·类型101">
+  </a>
+  <figcaption>
+    <div class="t"><b>043</b> 人物·类型101</div>
+    <div class="ja">出场 9 张地图</div>
+    <div class="meta">商店、地图15、地图23、地图37、地图79、地图94 等 9 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 4 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型102 044 地图60">
+  <a class="thumb tall" href="人物/044_人物102.gif" target="_blank">
+    <img loading="lazy" src="人物/044_人物102.gif" alt="人物·类型102">
+  </a>
+  <figcaption>
+    <div class="t"><b>044</b> 人物·类型102</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">地图60</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 4 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型103 045 地图41、战车渡口 B1、地图91">
+  <a class="thumb tall" href="人物/045_人物103.gif" target="_blank">
+    <img loading="lazy" src="人物/045_人物103.gif" alt="人物·类型103">
+  </a>
+  <figcaption>
+    <div class="t"><b>045</b> 人物·类型103</div>
+    <div class="ja">出场 3 张地图</div>
+    <div class="meta">地图41、战车渡口 B1、地图91</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 4 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型104 046 地图18、地图36、地图38、地图58、战车渡口 B1、地图105">
+  <a class="thumb tall" href="人物/046_人物104.gif" target="_blank">
+    <img loading="lazy" src="人物/046_人物104.gif" alt="人物·类型104">
+  </a>
+  <figcaption>
+    <div class="t"><b>046</b> 人物·类型104</div>
+    <div class="ja">出场 9 张地图</div>
+    <div class="meta">地图18、地图36、地图38、地图58、战车渡口 B1、地图105 等 9 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型105 047 地图14、地图29、奥多、地图44、地图45、地图46">
+  <a class="thumb tall" href="人物/047_人物105.gif" target="_blank">
+    <img loading="lazy" src="人物/047_人物105.gif" alt="人物·类型105">
+  </a>
+  <figcaption>
+    <div class="t"><b>047</b> 人物·类型105</div>
+    <div class="ja">出场 27 张地图</div>
+    <div class="meta">地图14、地图29、奥多、地图44、地图45、地图46 等 27 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型106 048 地图36、地图38、地图43、地图54、伊尔、地图86">
+  <a class="thumb tall" href="人物/048_人物106.gif" target="_blank">
+    <img loading="lazy" src="人物/048_人物106.gif" alt="人物·类型106">
+  </a>
+  <figcaption>
+    <div class="t"><b>048</b> 人物·类型106</div>
+    <div class="ja">出场 10 张地图</div>
+    <div class="meta">地图36、地图38、地图43、地图54、伊尔、地图86 等 10 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型107 049 旅馆、地图20、伊尔、地图59、塔镇、地图105">
+  <a class="thumb tall" href="人物/049_人物107.gif" target="_blank">
+    <img loading="lazy" src="人物/049_人物107.gif" alt="人物·类型107">
+  </a>
+  <figcaption>
+    <div class="t"><b>049</b> 人物·类型107</div>
+    <div class="ja">出场 7 张地图</div>
+    <div class="meta">旅馆、地图20、伊尔、地图59、塔镇、地图105 等 7 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型108 050 地图26、地图85、地图223">
+  <a class="thumb tall" href="人物/050_人物108.gif" target="_blank">
+    <img loading="lazy" src="人物/050_人物108.gif" alt="人物·类型108">
+  </a>
+  <figcaption>
+    <div class="t"><b>050</b> 人物·类型108</div>
+    <div class="ja">出场 3 张地图</div>
+    <div class="meta">地图26、地图85、地图223</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型109 051 旅馆、地图13、波布、地图43、战车渡口 B1、地图85">
+  <a class="thumb tall" href="人物/051_人物109.gif" target="_blank">
+    <img loading="lazy" src="人物/051_人物109.gif" alt="人物·类型109">
+  </a>
+  <figcaption>
+    <div class="t"><b>051</b> 人物·类型109</div>
+    <div class="ja">出场 9 张地图</div>
+    <div class="meta">旅馆、地图13、波布、地图43、战车渡口 B1、地图85 等 9 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型110 052 地图20、地图27、地图35、地图43、地图96、卡拉">
+  <a class="thumb tall" href="人物/052_人物110.gif" target="_blank">
+    <img loading="lazy" src="人物/052_人物110.gif" alt="人物·类型110">
+  </a>
+  <figcaption>
+    <div class="t"><b>052</b> 人物·类型110</div>
+    <div class="ja">出场 7 张地图</div>
+    <div class="meta">地图20、地图27、地图35、地图43、地图96、卡拉 等 7 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型111 053 地图14、地图51、地图54、地图62、卡拉、乌利乌爷爷家">
+  <a class="thumb tall" href="人物/053_人物111.gif" target="_blank">
+    <img loading="lazy" src="人物/053_人物111.gif" alt="人物·类型111">
+  </a>
+  <figcaption>
+    <div class="t"><b>053</b> 人物·类型111</div>
+    <div class="ja">出场 6 张地图</div>
+    <div class="meta">地图14、地图51、地图54、地图62、卡拉、乌利乌爷爷家</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型112 054 地图26、地图35、地图61">
+  <a class="thumb tall" href="人物/054_人物112.gif" target="_blank">
+    <img loading="lazy" src="人物/054_人物112.gif" alt="人物·类型112">
+  </a>
+  <figcaption>
+    <div class="t"><b>054</b> 人物·类型112</div>
+    <div class="ja">出场 3 张地图</div>
+    <div class="meta">地图26、地图35、地图61</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型113 055 地图9、地图21、罗克、地图73、地图87、乌利乌爷爷家 B1">
+  <a class="thumb tall" href="人物/055_人物113.gif" target="_blank">
+    <img loading="lazy" src="人物/055_人物113.gif" alt="人物·类型113">
+  </a>
+  <figcaption>
+    <div class="t"><b>055</b> 人物·类型113</div>
+    <div class="ja">出场 10 张地图</div>
+    <div class="meta">地图9、地图21、罗克、地图73、地图87、乌利乌爷爷家 B1 等 10 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型114 056 地图43、森林隐村、无敌医院、地图190">
+  <a class="thumb tall" href="人物/056_人物114.gif" target="_blank">
+    <img loading="lazy" src="人物/056_人物114.gif" alt="人物·类型114">
+  </a>
+  <figcaption>
+    <div class="t"><b>056</b> 人物·类型114</div>
+    <div class="ja">出场 4 张地图</div>
+    <div class="meta">地图43、森林隐村、无敌医院、地图190</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型115 057 地图15、地图55、地图103、地图167、地图232、地图236">
+  <a class="thumb tall" href="人物/057_人物115.gif" target="_blank">
+    <img loading="lazy" src="人物/057_人物115.gif" alt="人物·类型115">
+  </a>
+  <figcaption>
+    <div class="t"><b>057</b> 人物·类型115</div>
+    <div class="ja">出场 6 张地图</div>
+    <div class="meta">地图15、地图55、地图103、地图167、地图232、地图236</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型116 058 酒吧、地图51、地图61、地图62、战车渡口 B1、战车渡口 B1">
+  <a class="thumb tall" href="人物/058_人物116.gif" target="_blank">
+    <img loading="lazy" src="人物/058_人物116.gif" alt="人物·类型116">
+  </a>
+  <figcaption>
+    <div class="t"><b>058</b> 人物·类型116</div>
+    <div class="ja">出场 10 张地图</div>
+    <div class="meta">酒吧、地图51、地图61、地图62、战车渡口 B1、战车渡口 B1 等 10 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型117 059 拉多、商店、地图21、地图45、地图51、地图52">
+  <a class="thumb tall" href="人物/059_人物117.gif" target="_blank">
+    <img loading="lazy" src="人物/059_人物117.gif" alt="人物·类型117">
+  </a>
+  <figcaption>
+    <div class="t"><b>059</b> 人物·类型117</div>
+    <div class="ja">出场 20 张地图</div>
+    <div class="meta">拉多、商店、地图21、地图45、地图51、地图52 等 20 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型118 060 拉多、地图21、地图24、地图33、地图36、战车渡口">
+  <a class="thumb tall" href="人物/060_人物118.gif" target="_blank">
+    <img loading="lazy" src="人物/060_人物118.gif" alt="人物·类型118">
+  </a>
+  <figcaption>
+    <div class="t"><b>060</b> 人物·类型118</div>
+    <div class="ja">出场 13 张地图</div>
+    <div class="meta">拉多、地图21、地图24、地图33、地图36、战车渡口 等 13 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型119 061 地图36、地图37、地图43、地图104、北关卡、海岸工厂">
+  <a class="thumb tall" href="人物/061_人物119.gif" target="_blank">
+    <img loading="lazy" src="人物/061_人物119.gif" alt="人物·类型119">
+  </a>
+  <figcaption>
+    <div class="t"><b>061</b> 人物·类型119</div>
+    <div class="ja">出场 8 张地图</div>
+    <div class="meta">地图36、地图37、地图43、地图104、北关卡、海岸工厂 等 8 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型121 062 海岸工厂 B2">
+  <a class="thumb tall" href="人物/062_人物121.gif" target="_blank">
+    <img loading="lazy" src="人物/062_人物121.gif" alt="人物·类型121">
+  </a>
+  <figcaption>
+    <div class="t"><b>062</b> 人物·类型121</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">海岸工厂 B2</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型124 063 地图26">
+  <a class="thumb tall" href="人物/063_人物124.gif" target="_blank">
+    <img loading="lazy" src="人物/063_人物124.gif" alt="人物·类型124">
+  </a>
+  <figcaption>
+    <div class="t"><b>063</b> 人物·类型124</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">地图26</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型128 064 海岸工厂 B2">
+  <a class="thumb tall" href="人物/064_人物128.gif" target="_blank">
+    <img loading="lazy" src="人物/064_人物128.gif" alt="人物·类型128">
+  </a>
+  <figcaption>
+    <div class="t"><b>064</b> 人物·类型128</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">海岸工厂 B2</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型129 065 地图38">
+  <a class="thumb tall" href="人物/065_人物129.gif" target="_blank">
+    <img loading="lazy" src="人物/065_人物129.gif" alt="人物·类型129">
+  </a>
+  <figcaption>
+    <div class="t"><b>065</b> 人物·类型129</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">地图38</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型130 066 地图28、地图29">
+  <a class="thumb tall" href="人物/066_人物130.gif" target="_blank">
+    <img loading="lazy" src="人物/066_人物130.gif" alt="人物·类型130">
+  </a>
+  <figcaption>
+    <div class="t"><b>066</b> 人物·类型130</div>
+    <div class="ja">出场 2 张地图</div>
+    <div class="meta">地图28、地图29</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型132 067 地图81">
+  <a class="thumb tall" href="人物/067_人物132.gif" target="_blank">
+    <img loading="lazy" src="人物/067_人物132.gif" alt="人物·类型132">
+  </a>
+  <figcaption>
+    <div class="t"><b>067</b> 人物·类型132</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">地图81</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型134 068 地图81">
+  <a class="thumb tall" href="人物/068_人物134.gif" target="_blank">
+    <img loading="lazy" src="人物/068_人物134.gif" alt="人物·类型134">
+  </a>
+  <figcaption>
+    <div class="t"><b>068</b> 人物·类型134</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">地图81</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型138 069 地狱门">
+  <a class="thumb tall" href="人物/069_人物138.gif" target="_blank">
+    <img loading="lazy" src="人物/069_人物138.gif" alt="人物·类型138">
+  </a>
+  <figcaption>
+    <div class="t"><b>069</b> 人物·类型138</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">地狱门</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型143 070 地图48">
+  <a class="thumb tall" href="人物/070_人物143.gif" target="_blank">
+    <img loading="lazy" src="人物/070_人物143.gif" alt="人物·类型143">
+  </a>
+  <figcaption>
+    <div class="t"><b>070</b> 人物·类型143</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">地图48</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型144 071 地图98、地球救济中心">
+  <a class="thumb tall" href="人物/071_人物144.gif" target="_blank">
+    <img loading="lazy" src="人物/071_人物144.gif" alt="人物·类型144">
+  </a>
+  <figcaption>
+    <div class="t"><b>071</b> 人物·类型144</div>
+    <div class="ja">出场 2 张地图</div>
+    <div class="meta">地图98、地球救济中心</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型145 072 地图87、电波塔 B2、地图219、麦基南">
+  <a class="thumb tall" href="人物/072_人物145.gif" target="_blank">
+    <img loading="lazy" src="人物/072_人物145.gif" alt="人物·类型145">
+  </a>
+  <figcaption>
+    <div class="t"><b>072</b> 人物·类型145</div>
+    <div class="ja">出场 4 张地图</div>
+    <div class="meta">地图87、电波塔 B2、地图219、麦基南</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型146 073 地图98、地图219">
+  <a class="thumb tall" href="人物/073_人物146.gif" target="_blank">
+    <img loading="lazy" src="人物/073_人物146.gif" alt="人物·类型146">
+  </a>
+  <figcaption>
+    <div class="t"><b>073</b> 人物·类型146</div>
+    <div class="ja">出场 2 张地图</div>
+    <div class="meta">地图98、地图219</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型147 074 电波塔 B3">
+  <a class="thumb tall" href="人物/074_人物147.gif" target="_blank">
+    <img loading="lazy" src="人物/074_人物147.gif" alt="人物·类型147">
+  </a>
+  <figcaption>
+    <div class="t"><b>074</b> 人物·类型147</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">电波塔 B3</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型149 075 明奇博士家、幽灵基地">
+  <a class="thumb tall" href="人物/075_人物149.gif" target="_blank">
+    <img loading="lazy" src="人物/075_人物149.gif" alt="人物·类型149">
+  </a>
+  <figcaption>
+    <div class="t"><b>075</b> 人物·类型149</div>
+    <div class="ja">出场 2 张地图</div>
+    <div class="meta">明奇博士家、幽灵基地</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型152 076 车库1F、地图85、地图101">
+  <a class="thumb tall" href="人物/076_人物152.gif" target="_blank">
+    <img loading="lazy" src="人物/076_人物152.gif" alt="人物·类型152">
+  </a>
+  <figcaption>
+    <div class="t"><b>076</b> 人物·类型152</div>
+    <div class="ja">出场 3 张地图</div>
+    <div class="meta">车库1F、地图85、地图101</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型153 077 波布、地图22、地图90、海岸工厂 B2、地图147、地图232">
+  <a class="thumb tall" href="人物/077_人物153.gif" target="_blank">
+    <img loading="lazy" src="人物/077_人物153.gif" alt="人物·类型153">
+  </a>
+  <figcaption>
+    <div class="t"><b>077</b> 人物·类型153</div>
+    <div class="ja">出场 6 张地图</div>
+    <div class="meta">波布、地图22、地图90、海岸工厂 B2、地图147、地图232</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型154 078 车库2F、地图22、地图36、地图96">
+  <a class="thumb tall" href="人物/078_人物154.gif" target="_blank">
+    <img loading="lazy" src="人物/078_人物154.gif" alt="人物·类型154">
+  </a>
+  <figcaption>
+    <div class="t"><b>078</b> 人物·类型154</div>
+    <div class="ja">出场 4 张地图</div>
+    <div class="meta">车库2F、地图22、地图36、地图96</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型155 079 地图89">
+  <a class="thumb tall" href="人物/079_人物155.gif" target="_blank">
+    <img loading="lazy" src="人物/079_人物155.gif" alt="人物·类型155">
+  </a>
+  <figcaption>
+    <div class="t"><b>079</b> 人物·类型155</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">地图89</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型156 080 车库1F、地图21、地图32、地图33、地图46、地图58">
+  <a class="thumb tall" href="人物/080_人物156.gif" target="_blank">
+    <img loading="lazy" src="人物/080_人物156.gif" alt="人物·类型156">
+  </a>
+  <figcaption>
+    <div class="t"><b>080</b> 人物·类型156</div>
+    <div class="ja">出场 7 张地图</div>
+    <div class="meta">车库1F、地图21、地图32、地图33、地图46、地图58 等 7 处</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型157 081 车库1F、地图46、地图52、地图53、地图58、海岸工厂 B2">
+  <a class="thumb tall" href="人物/081_人物157.gif" target="_blank">
+    <img loading="lazy" src="人物/081_人物157.gif" alt="人物·类型157">
+  </a>
+  <figcaption>
+    <div class="t"><b>081</b> 人物·类型157</div>
+    <div class="ja">出场 6 张地图</div>
+    <div class="meta">车库1F、地图46、地图52、地图53、地图58、海岸工厂 B2</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型158 082 地图25、地图33、地图58、地图72">
+  <a class="thumb tall" href="人物/082_人物158.gif" target="_blank">
+    <img loading="lazy" src="人物/082_人物158.gif" alt="人物·类型158">
+  </a>
+  <figcaption>
+    <div class="t"><b>082</b> 人物·类型158</div>
+    <div class="ja">出场 4 张地图</div>
+    <div class="meta">地图25、地图33、地图58、地图72</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型159 083 地图25、地图58、地图59">
+  <a class="thumb tall" href="人物/083_人物159.gif" target="_blank">
+    <img loading="lazy" src="人物/083_人物159.gif" alt="人物·类型159">
+  </a>
+  <figcaption>
+    <div class="t"><b>083</b> 人物·类型159</div>
+    <div class="ja">出场 3 张地图</div>
+    <div class="meta">地图25、地图58、地图59</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型162 084 酒吧">
+  <a class="thumb tall" href="人物/084_人物162.gif" target="_blank">
+    <img loading="lazy" src="人物/084_人物162.gif" alt="人物·类型162">
+  </a>
+  <figcaption>
+    <div class="t"><b>084</b> 人物·类型162</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">酒吧</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型166 085 南之洞窟 B2">
+  <a class="thumb tall" href="人物/085_人物166.gif" target="_blank">
+    <img loading="lazy" src="人物/085_人物166.gif" alt="人物·类型166">
+  </a>
+  <figcaption>
+    <div class="t"><b>085</b> 人物·类型166</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">南之洞窟 B2</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型170 086 森林隐村">
+  <a class="thumb tall" href="人物/086_人物170.gif" target="_blank">
+    <img loading="lazy" src="人物/086_人物170.gif" alt="人物·类型170">
+  </a>
+  <figcaption>
+    <div class="t"><b>086</b> 人物·类型170</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">森林隐村</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型176 087 旅馆2F、地图123">
+  <a class="thumb tall" href="人物/087_人物176.gif" target="_blank">
+    <img loading="lazy" src="人物/087_人物176.gif" alt="人物·类型176">
+  </a>
+  <figcaption>
+    <div class="t"><b>087</b> 人物·类型176</div>
+    <div class="ja">出场 2 张地图</div>
+    <div class="meta">旅馆2F、地图123</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型180 088 地图153">
+  <a class="thumb tall" href="人物/088_人物180.gif" target="_blank">
+    <img loading="lazy" src="人物/088_人物180.gif" alt="人物·类型180">
+  </a>
+  <figcaption>
+    <div class="t"><b>088</b> 人物·类型180</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">地图153</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型184 089 地图153">
+  <a class="thumb tall" href="人物/089_人物184.gif" target="_blank">
+    <img loading="lazy" src="人物/089_人物184.gif" alt="人物·类型184">
+  </a>
+  <figcaption>
+    <div class="t"><b>089</b> 人物·类型184</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">地图153</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型188 090 地藏洞 B2、地图171">
+  <a class="thumb tall" href="人物/090_人物188.gif" target="_blank">
+    <img loading="lazy" src="人物/090_人物188.gif" alt="人物·类型188">
+  </a>
+  <figcaption>
+    <div class="t"><b>090</b> 人物·类型188</div>
+    <div class="ja">出场 2 张地图</div>
+    <div class="meta">地藏洞 B2、地图171</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型192 091 地图61">
+  <a class="thumb tall" href="人物/091_人物192.gif" target="_blank">
+    <img loading="lazy" src="人物/091_人物192.gif" alt="人物·类型192">
+  </a>
+  <figcaption>
+    <div class="t"><b>091</b> 人物·类型192</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">地图61</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型200 092 地球救济中心 B1">
+  <a class="thumb tall" href="人物/092_人物200.gif" target="_blank">
+    <img loading="lazy" src="人物/092_人物200.gif" alt="人物·类型200">
+  </a>
+  <figcaption>
+    <div class="t"><b>092</b> 人物·类型200</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">地球救济中心 B1</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型208 093 地图147、地图225">
+  <a class="thumb tall" href="人物/093_人物208.gif" target="_blank">
+    <img loading="lazy" src="人物/093_人物208.gif" alt="人物·类型208">
+  </a>
+  <figcaption>
+    <div class="t"><b>093</b> 人物·类型208</div>
+    <div class="ja">出场 2 张地图</div>
+    <div class="meta">地图147、地图225</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型209 094 地图87、地图98、伊萨克之泉、地图219、麦基南">
+  <a class="thumb tall" href="人物/094_人物209.gif" target="_blank">
+    <img loading="lazy" src="人物/094_人物209.gif" alt="人物·类型209">
+  </a>
+  <figcaption>
+    <div class="t"><b>094</b> 人物·类型209</div>
+    <div class="ja">出场 5 张地图</div>
+    <div class="meta">地图87、地图98、伊萨克之泉、地图219、麦基南</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型210 095 伊萨克之泉、地图225">
+  <a class="thumb tall" href="人物/095_人物210.gif" target="_blank">
+    <img loading="lazy" src="人物/095_人物210.gif" alt="人物·类型210">
+  </a>
+  <figcaption>
+    <div class="t"><b>095</b> 人物·类型210</div>
+    <div class="ja">出场 2 张地图</div>
+    <div class="meta">伊萨克之泉、地图225</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型211 096 海边补给所、伊萨克之泉、地图219">
+  <a class="thumb tall" href="人物/096_人物211.gif" target="_blank">
+    <img loading="lazy" src="人物/096_人物211.gif" alt="人物·类型211">
+  </a>
+  <figcaption>
+    <div class="t"><b>096</b> 人物·类型211</div>
+    <div class="ja">出场 3 张地图</div>
+    <div class="meta">海边补给所、伊萨克之泉、地图219</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型212 097 地球救济中心">
+  <a class="thumb tall" href="人物/097_人物212.gif" target="_blank">
+    <img loading="lazy" src="人物/097_人物212.gif" alt="人物·类型212">
+  </a>
+  <figcaption>
+    <div class="t"><b>097</b> 人物·类型212</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">地球救济中心</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型215 098 瀑布潭巢穴">
+  <a class="thumb tall" href="人物/098_人物215.gif" target="_blank">
+    <img loading="lazy" src="人物/098_人物215.gif" alt="人物·类型215">
+  </a>
+  <figcaption>
+    <div class="t"><b>098</b> 人物·类型215</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">瀑布潭巢穴</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型216 099 老夫妇家">
+  <a class="thumb tall" href="人物/099_人物216.gif" target="_blank">
+    <img loading="lazy" src="人物/099_人物216.gif" alt="人物·类型216">
+  </a>
+  <figcaption>
+    <div class="t"><b>099</b> 人物·类型216</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">老夫妇家</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型224 100 明奇博士家">
+  <a class="thumb tall" href="人物/100_人物224.gif" target="_blank">
+    <img loading="lazy" src="人物/100_人物224.gif" alt="人物·类型224">
+  </a>
+  <figcaption>
+    <div class="t"><b>100</b> 人物·类型224</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">明奇博士家</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 2 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型225 101 瀑布潭巢穴 B1">
+  <a class="thumb tall" href="人物/101_人物225.gif" target="_blank">
+    <img loading="lazy" src="人物/101_人物225.gif" alt="人物·类型225">
+  </a>
+  <figcaption>
+    <div class="t"><b>101</b> 人物·类型225</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">瀑布潭巢穴 B1</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型229 102 地图135">
+  <a class="thumb tall" href="人物/102_人物229.gif" target="_blank">
+    <img loading="lazy" src="人物/102_人物229.gif" alt="人物·类型229">
+  </a>
+  <figcaption>
+    <div class="t"><b>102</b> 人物·类型229</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">地图135</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型230 103 地图135、地图136">
+  <a class="thumb tall" href="人物/103_人物230.gif" target="_blank">
+    <img loading="lazy" src="人物/103_人物230.gif" alt="人物·类型230">
+  </a>
+  <figcaption>
+    <div class="t"><b>103</b> 人物·类型230</div>
+    <div class="ja">出场 2 张地图</div>
+    <div class="meta">地图135、地图136</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型231 104 地图99、地图135、地图136">
+  <a class="thumb tall" href="人物/104_人物231.gif" target="_blank">
+    <img loading="lazy" src="人物/104_人物231.gif" alt="人物·类型231">
+  </a>
+  <figcaption>
+    <div class="t"><b>104</b> 人物·类型231</div>
+    <div class="ja">出场 3 张地图</div>
+    <div class="meta">地图99、地图135、地图136</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型232 105 北关卡">
+  <a class="thumb tall" href="人物/105_人物232.gif" target="_blank">
+    <img loading="lazy" src="人物/105_人物232.gif" alt="人物·类型232">
+  </a>
+  <figcaption>
+    <div class="t"><b>105</b> 人物·类型232</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">北关卡</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型233 106 海滨洞窟、地图136">
+  <a class="thumb tall" href="人物/106_人物233.gif" target="_blank">
+    <img loading="lazy" src="人物/106_人物233.gif" alt="人物·类型233">
+  </a>
+  <figcaption>
+    <div class="t"><b>106</b> 人物·类型233</div>
+    <div class="ja">出场 2 张地图</div>
+    <div class="meta">海滨洞窟、地图136</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型237 107 地图20">
+  <a class="thumb tall" href="人物/107_人物237.gif" target="_blank">
+    <img loading="lazy" src="人物/107_人物237.gif" alt="人物·类型237">
+  </a>
+  <figcaption>
+    <div class="t"><b>107</b> 人物·类型237</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">地图20</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型239 108 地图13、地图29、地图62、地图82、地图233">
+  <a class="thumb tall" href="人物/108_人物239.gif" target="_blank">
+    <img loading="lazy" src="人物/108_人物239.gif" alt="人物·类型239">
+  </a>
+  <figcaption>
+    <div class="t"><b>108</b> 人物·类型239</div>
+    <div class="ja">出场 5 张地图</div>
+    <div class="meta">地图13、地图29、地图62、地图82、地图233</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型243 109 地图226">
+  <a class="thumb tall" href="人物/109_人物243.gif" target="_blank">
+    <img loading="lazy" src="人物/109_人物243.gif" alt="人物·类型243">
+  </a>
+  <figcaption>
+    <div class="t"><b>109</b> 人物·类型243</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">地图226</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型244 110 幽灵基地 B9">
+  <a class="thumb tall" href="人物/110_人物244.gif" target="_blank">
+    <img loading="lazy" src="人物/110_人物244.gif" alt="人物·类型244">
+  </a>
+  <figcaption>
+    <div class="t"><b>110</b> 人物·类型244</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">幽灵基地 B9</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型245 111 幽灵基地 B9">
+  <a class="thumb tall" href="人物/111_人物245.gif" target="_blank">
+    <img loading="lazy" src="人物/111_人物245.gif" alt="人物·类型245">
+  </a>
+  <figcaption>
+    <div class="t"><b>111</b> 人物·类型245</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">幽灵基地 B9</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure><figure class="card" data-k="人物·类型248 112 电波塔 B2">
+  <a class="thumb tall" href="人物/112_人物248.gif" target="_blank">
+    <img loading="lazy" src="人物/112_人物248.gif" alt="人物·类型248">
+  </a>
+  <figcaption>
+    <div class="t"><b>112</b> 人物·类型248</div>
+    <div class="ja">出场 1 张地图</div>
+    <div class="meta">电波塔 B2</div>
+    <div class="meta dim">8 帧（上/下/左/右 各 2 帧） · 3 色</div>
+  </figcaption>
+</figure></div>
+  <h2 id="fx">特效 <span class="n">10 项 · 单帧项仅显示一张</span><a class="zip" href="帧图_特效.zip">下载逐帧 PNG（ZIP）</a></h2>
+  <div class="grid"><figure class="card" data-k="传送螺旋 001">
+  <a class="thumb" href="特效/001_传送螺旋.gif" target="_blank">
+    <img loading="lazy" src="特效/001_传送螺旋.gif" alt="传送螺旋">
+  </a>
+  <figcaption>
+    <div class="t"><b>001</b> 传送螺旋</div>
+    <div class="ja">动态 · 4 帧</div>
+    <div class="meta">传送时人物外围的旋转光环，4 帧循环</div>
+  </figcaption>
+</figure><figure class="card" data-k="明奇电击·强 002">
+  <a class="thumb" href="特效/002_明奇电击·强.gif" target="_blank">
+    <img loading="lazy" src="特效/002_明奇电击·强.gif" alt="明奇电击·强">
+  </a>
+  <figcaption>
+    <div class="t"><b>002</b> 明奇电击·强</div>
+    <div class="ja">静态 · 1 帧</div>
+    <div class="meta">博士给主角「复活」时的强电击</div>
+  </figcaption>
+</figure><figure class="card" data-k="明奇电击·弱 003">
+  <a class="thumb" href="特效/003_明奇电击·弱.gif" target="_blank">
+    <img loading="lazy" src="特效/003_明奇电击·弱.gif" alt="明奇电击·弱">
+  </a>
+  <figcaption>
+    <div class="t"><b>003</b> 明奇电击·弱</div>
+    <div class="ja">静态 · 1 帧</div>
+    <div class="meta">弱电击形态</div>
+  </figcaption>
+</figure><figure class="card" data-k="明奇之手 004">
+  <a class="thumb" href="特效/004_明奇之手.gif" target="_blank">
+    <img loading="lazy" src="特效/004_明奇之手.gif" alt="明奇之手">
+  </a>
+  <figcaption>
+    <div class="t"><b>004</b> 明奇之手</div>
+    <div class="ja">静态 · 1 帧</div>
+    <div class="meta">电击时伸出的双手</div>
+  </figcaption>
+</figure><figure class="card" data-k="电弧 005">
+  <a class="thumb" href="特效/005_电弧.gif" target="_blank">
+    <img loading="lazy" src="特效/005_电弧.gif" alt="电弧">
+  </a>
+  <figcaption>
+    <div class="t"><b>005</b> 电弧</div>
+    <div class="ja">静态 · 1 帧</div>
+    <div class="meta">电击的单束电弧</div>
+  </figcaption>
+</figure><figure class="card" data-k="选择光标 006">
+  <a class="thumb" href="特效/006_选择光标.gif" target="_blank">
+    <img loading="lazy" src="特效/006_选择光标.gif" alt="选择光标">
+  </a>
+  <figcaption>
+    <div class="t"><b>006</b> 选择光标</div>
+    <div class="ja">动态 · 4 帧</div>
+    <div class="meta">菜单选择框的指示手，闪烁显示</div>
+  </figcaption>
+</figure><figure class="card" data-k="子弹飞行 007">
+  <a class="thumb" href="特效/007_子弹飞行.gif" target="_blank">
+    <img loading="lazy" src="特效/007_子弹飞行.gif" alt="子弹飞行">
+  </a>
+  <figcaption>
+    <div class="t"><b>007</b> 子弹飞行</div>
+    <div class="ja">动态 · 9 帧</div>
+    <div class="meta">实机测得每帧前进 8px，飞行 9 帧</div>
+  </figcaption>
+</figure><figure class="card" data-k="我方攻击手臂 008">
+  <a class="thumb" href="特效/008_我方攻击手臂.gif" target="_blank">
+    <img loading="lazy" src="特效/008_我方攻击手臂.gif" alt="我方攻击手臂">
+  </a>
+  <figcaption>
+    <div class="t"><b>008</b> 我方攻击手臂</div>
+    <div class="ja">静态 · 1 帧</div>
+    <div class="meta">白兵攻击时伸出的手臂</div>
+  </figcaption>
+</figure><figure class="card" data-k="投掷姿势 009">
+  <a class="thumb" href="特效/009_投掷姿势.gif" target="_blank">
+    <img loading="lazy" src="特效/009_投掷姿势.gif" alt="投掷姿势">
+  </a>
+  <figcaption>
+    <div class="t"><b>009</b> 投掷姿势</div>
+    <div class="ja">动态 · 2 帧</div>
+    <div class="meta">投掷道具的预备与出手两个姿势</div>
+  </figcaption>
+</figure><figure class="card" data-k="主角战斗立绘·受击 010">
+  <a class="thumb" href="特效/010_主角战斗立绘·受击.gif" target="_blank">
+    <img loading="lazy" src="特效/010_主角战斗立绘·受击.gif" alt="主角战斗立绘·受击">
+  </a>
+  <figcaption>
+    <div class="t"><b>010</b> 主角战斗立绘·受击</div>
+    <div class="ja">动态 · 7 帧</div>
+    <div class="meta">受击时整体右移 6px 再回位（实测位移）</div>
+  </figcaption>
+</figure></div>
+</main>
+<footer>
+  <p>怪物立绘取自 ROM 怪物模型表；FC 原版立绘是单帧静态图，GIF 里的受击闪白与攻击前冲按实机表现合成（实测受击位移 6px）。<br>
+  人物无名字是原版设定，只能按 ROM 的 NPC 图形类型号区分，出场地图由 176 张地图的图集统计。<br>
+  特效中投掷过程的图块拼装动画因导出图集的图块号与帧数据不匹配，未收录。</p>
+</footer>
+<script>
+const q = document.getElementById('q');
+const cards = [...document.querySelectorAll('.card')];
+const secs = [...document.querySelectorAll('h2')];
+q.addEventListener('input', () => {
+  const v = q.value.trim().toLowerCase();
+  cards.forEach(c => {
+    const hit = !v || (c.dataset.k || '').toLowerCase().includes(v);
+    c.classList.toggle('hide', !hit);
+  });
+  secs.forEach(h => {
+    const grid = h.nextElementSibling;
+    const left = grid ? [...grid.children].filter(c => !c.classList.contains('hide')).length : 0;
+    h.style.display = (!v || left) ? '' : 'none';
+  });
+});
+</script>
+</body></html>
